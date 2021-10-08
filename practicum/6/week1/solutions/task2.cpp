@@ -4,7 +4,7 @@ using namespace std;
 
 int main()
 {
-	unsigned int a = 0; //Декларира променлива от тип положително число
+	unsigned int a = 0; //Декларира променлива от тип положително цяло число
 
 	cin >> a;
 
