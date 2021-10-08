@@ -23,5 +23,5 @@ int main()
 	cin >> f >> s;
 	f = f * s;
 	s = f / s;
-	s = f / s;
+	f = f / s;
 }
