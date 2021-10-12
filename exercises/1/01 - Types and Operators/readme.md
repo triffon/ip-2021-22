@@ -16,8 +16,6 @@ To be updated later
  - comparision
  - shorthand
 - I/O
-- Functions (MAYBE)
-
 
 ## Problems
 
@@ -60,10 +58,10 @@ Given 2 integers, find the smaller one.
 
 Given a 3-digit number, calculate the sum of its odd digits.
 
-## 10
+## 09
 
 Given a year, check if it is leap.
 
-## 11
+## 10
 
 Given the 3 sides of a triangle, check if such triangle can exist
