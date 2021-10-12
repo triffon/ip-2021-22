@@ -58,15 +58,7 @@ Given 2 integers, find the smaller one.
 
 ## 08
 
-Given a 3-digit number, calculate the product of its odd digits.
-
-## 09
-
-Given the coordinates of 2 chess pieces, check if they can capture each other
- - 2 rooks
- - 2 bishops
- - 2 queens
- - 2 horses
+Given a 3-digit number, calculate the sum of its odd digits.
 
 ## 10
 
@@ -74,8 +66,4 @@ Given a year, check if it is leap.
 
 ## 11
 
-Given the coordinates of a 2D point, check if it is on or above the line with the equation `4x + y = 24`
-
-## 12
-
-Given the coordinates of a 2D point, the center of a circle and the radius of a circle, check if the point is inside the circle.
+Given the 3 sides of a triangle, check if such triangle can exist
