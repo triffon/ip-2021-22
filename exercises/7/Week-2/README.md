@@ -16,6 +16,7 @@
 - [LearnCPP C++ Tutorial](https://www.learncpp.com/)
 
 ## Recap from Lectures
+- [Von Neumann Architecture](https://en.wikipedia.org/wiki/Von_Neumann_architecture)
 - [Structure of a C++ Program](https://www.cplusplus.com/doc/tutorial/program_structure/)
 - [Variables and Types](https://www.cplusplus.com/doc/tutorial/variables/)
 - [Constants](https://www.cplusplus.com/doc/tutorial/constants/)
