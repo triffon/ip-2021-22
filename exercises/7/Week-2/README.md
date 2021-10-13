@@ -15,6 +15,12 @@
 - [CPlusPlus C++ Tutorial](https://www.cplusplus.com/doc/tutorial/)
 - [LearnCPP C++ Tutorial](https://www.learncpp.com/)
 
+## Recap from Lectures
+- [Structure of a C++ Program](https://www.cplusplus.com/doc/tutorial/program_structure/)
+- [Variables and Types](https://www.cplusplus.com/doc/tutorial/variables/)
+- [Constants](https://www.cplusplus.com/doc/tutorial/constants/)
+- [Operators](https://www.cplusplus.com/doc/tutorial/operators/)
+
 ## Problems
 - Write a program that reads two numbers N & M from STDIN (N & M between 0 and 1 000 000) and swaps their values
 	- with a third variable O
