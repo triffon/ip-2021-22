@@ -9,6 +9,10 @@
 - [Clone the Repository](git@github.com:FMI-2021-KN-7/Introduction-to-Programming.git)
 - Create a New Folder in 'Day-1' Named After You
 
+## Recap from Lectures
+- [Types of Programming Languages](https://www.watelectronics.com/types-of-programming-languages-with-differences/)
+- [Numeral Systems in Computer Science](https://en.wikipedia.org/wiki/Computer_number_format)
+
 ## Problems
 - Write a program that prints ‘Hello World’ to the screen.
 - Write a program that prints all prime numbers between 1 and 1 000 000.
