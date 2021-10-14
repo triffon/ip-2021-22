@@ -6,7 +6,7 @@ int main()
 	std::cout << "Please, enter a symbol: ";
 	std::cin >> c;
 
-	// вариант 1, явно преобразуване до int
+	// СЏРІРЅРѕ РїСЂРµРѕР±СЂР°Р·СѓРІР°РЅРµ РґРѕ int
 	std::cout << "Symbol: " << c << " Code: " << static_cast<int>(c) << '\n';
 	
 	int code = c;
