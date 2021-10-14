@@ -6,7 +6,7 @@ int main()
 	std::cout << "Please, enter a symbol: ";
 	std::cin >> c;
 
-	// ìàëêèòå è ãëàâíèòå ëàòèíñêè áóêâè ñà ïîñëåäîâàòåëíè â ASCII òàáëèöàòà
+	// Ğ¼Ğ°Ğ»ĞºĞ¸Ñ‚Ğµ Ğ¸ Ğ³Ğ»Ğ°Ğ²Ğ½Ğ¸Ñ‚Ğµ Ğ»Ğ°Ñ‚Ğ¸Ğ½ÑĞºĞ¸ Ğ±ÑƒĞºĞ²Ğ¸ ÑĞ° Ğ¿Ğ¾ÑĞ»ĞµĞ´Ğ¾Ğ²Ğ°Ñ‚ĞµĞ»Ğ½Ğ¸ Ğ² ASCII Ñ‚Ğ°Ğ±Ğ»Ğ¸Ñ†Ğ°Ñ‚Ğ°
 
 	bool isSmallLetter = (c >= 'a') && (c <= 'z');
 	std::cout << "Is the symbol a small letter? " << isSmallLetter << '\n';
