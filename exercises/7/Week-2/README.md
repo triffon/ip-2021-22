@@ -14,6 +14,7 @@
 - [TutorialsPoint C++ Tutorial](https://www.tutorialspoint.com/cplusplus/index.htm)
 - [CPlusPlus C++ Tutorial](https://www.cplusplus.com/doc/tutorial/)
 - [LearnCPP C++ Tutorial](https://www.learncpp.com/)
+- [Types of Memory - Stack, Heap, Static](https://craftofcoding.wordpress.com/2015/12/07/memory-in-c-the-stack-the-heap-and-static/)
 
 ## Recap from Lectures
 - [Von Neumann Architecture](https://en.wikipedia.org/wiki/Von_Neumann_architecture)
