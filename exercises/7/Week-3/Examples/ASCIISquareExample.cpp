@@ -1,3 +1,8 @@
+/*
+    Problem: Write a program that reads a number N and a character C from STDIN
+             (N between 1 and 20) and writes on STDOUT N lines of C repeated N times.
+*/
+
 #include<iostream>
 
 using namespace std;

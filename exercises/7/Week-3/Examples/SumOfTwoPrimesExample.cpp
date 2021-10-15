@@ -1,3 +1,9 @@
+/*
+    Problem: Write a program that reads a number N from STDIN
+             (N between 1 and 100) and writes on STDOUT all
+             possible ways to express N as a sum of two prime
+             numbers (e.g. 20 -> 1 + 19, 3 + 17 & 7 + 13).
+*/
 #include<iostream>
 
 using namespace std;
@@ -31,19 +37,9 @@ int main() {
     int n = readVariable("N", ONE, A_HUNDRED);
 
     for(int i = 1; i <= n / 2; i++) {
-        if (!isPrime(i)) {
-            continue;
-        }
-
-        for(int j=n; j + i >= n; j--) {
-            if (!isPrime(j)) {
-                continue;
-            }
-            
-            if (i + j == n) {
-                counter++;
-                cout << i << " + " << j << endl;
-            }
+        if (isPrime(i) && isPrime(n-i)) {
+            counter++;
+            cout << i << " + " << n-i << endl;
         }
     }
 

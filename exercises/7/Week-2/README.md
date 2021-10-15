@@ -24,27 +24,25 @@
 - [Operators](https://www.cplusplus.com/doc/tutorial/operators/)
 
 ## Problems
-- Write a program that reads two numbers N & M from STDIN (N & M between 0 and 1 000 000) and swaps their values
+- Write a program that reads two numbers N & M from STDIN (N & M between 0 and 1 000 000) and swaps their values:
 	- with a third variable O
 	- without a third variable
 
-- Write a program that reads a number N from STDIN (N between 0 and 3 000) and writes on STDOUT
-	- whether N is a leap year
+- Write a program that reads a number N from STDIN (N between 0 and 3 000) and writes on STDOUT whether N is a leap year.
 
-- Write a program that reads a number N from STDIN (N between 0 and 1 000 000) and writes on STDOUT
-	- the number of trailing zeros at the end of N factorial (e.g. 5! is 120, so it has one trailing zero)
+- Write a program that reads a number N from STDIN (N between 0 and 1 000 000) and writes on STDOUT the number of trailing zeros at the end of N factorial (e.g. 5! is 120, so it has one trailing zero).
 
 - Write a program that reads a temperature T from STDIN (T between -500 and 500) and a character S (can be one of [c, f, C, F]) and writes on STDOUT:
 	- if S == 'c' || S == 'C': the temperature in Fahrenheit converted using the formula  ((T * 9) / 5) + 32
 	- if S == 'f' || S == 'F': the temperature in Celsius converted using the formula  ((T - 32) * 5) / 9
 
-- Write a program that reads a number N from STDIN (N between 0 and 1 000 000) and writes on STDOUT
+- Write a program that reads a number N from STDIN (N between 0 and 1 000 000) and writes on STDOUT:
 	- N in binary
 	- N in octal
 	- N in decimal
 	- N in hexademical 
 
-- Write a program that reads a number N from STDIN (N between 0 and 100) and writes on STDOUT
+- Write a program that reads a number N from STDIN (N between 0 and 100) and writes on STDOUT:
 	- the Nth number in the Fibonacci sequence (using a for-loop)
 	- the Nth number in the Fibonacci sequence (using a reqursive function)*
 

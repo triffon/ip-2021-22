@@ -1,3 +1,10 @@
+/*
+    Problem: Write a program that reads a number N from STDIN
+             (N between 0 and 100) and writes on STDOUT:
+	             - the Nth number in the Fibonacci sequence (using a for-loop)
+	             - the Nth number in the Fibonacci sequence (using a reqursive function)*
+*/
+
 #include<chrono>
 #include<iostream>
 

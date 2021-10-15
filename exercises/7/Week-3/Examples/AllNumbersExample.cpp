@@ -1,3 +1,9 @@
+/*
+    Problem: Write a program that writes on STDOUT the number of unique
+             three-digit numbers that can be created using **_1_**,
+             **_2_**, **_3_** & **_4_** as well as all the numbers.
+*/
+
 #include<iostream>
 
 using namespace std;

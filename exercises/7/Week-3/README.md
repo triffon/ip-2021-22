@@ -29,7 +29,7 @@
 - Write a program that reads a number N and a character C from STDIN (N between 1 and 20) and writes on STDOUT an ASCII square with side N filled with C.
 - Write a program that reads numbers N and X from STDIN (N, X between 1 and 20) and writes on STDOUT the sum of the series [x - x^3 + x^5 - ... ± x^N].
 - Write a program that reads a number N from STDIN (N between 1 and 100) and writes on STDOUT all possible ways to express N as a sum of two prime numbers (e.g. 20 -> 3 + 17 & 7 + 13).
-- Write a program that writes on STDOUT the number of unique three-digit numbers that can be created using **_1_**, **_2_**, **_3_** & **_4_** as well as all the numbers.
+- Write a program that reads a number N and a character C from STDIN (N between 1 and 20) and writes on STDOUT N lines of C repeated N times.
 
 ## Problems for the Pros
 - Implement a programm that is capable of compressing/decompressing text files using [Huffman Coding](https://en.wikipedia.org/wiki/Huffman_coding). The program is expected to work as follows (see: [Command Line Arguments in C/C++](https://www.geeksforgeeks.org/command-line-arguments-in-c-cpp/)):

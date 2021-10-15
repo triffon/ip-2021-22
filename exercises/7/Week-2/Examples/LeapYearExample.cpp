@@ -1,3 +1,8 @@
+/*
+    Problem: Write a program that reads a number N from STDIN (N between 0
+             and 3 000) and writes on STDOUT whether N is a leap year.
+*/
+
 #include<iostream>
 
 using namespace std;

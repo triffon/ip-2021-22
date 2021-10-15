@@ -1,3 +1,9 @@
+/*
+    Problem: Write a program that reads a number N from STDIN
+             (N between 1 and 1000000) and writes on STDOUT N
+             with all digits reversed (e.g. 12345 -> 54321).
+*/
+
 #include<iomanip>
 #include<iostream>
 

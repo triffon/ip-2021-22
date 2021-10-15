@@ -1,3 +1,8 @@
+/*
+    Problem: Write a program that asks the user for their name and greets
+             them with their name only if they're named Alice or Bob.
+*/
+
 #include <iostream>
 #include <string>
 

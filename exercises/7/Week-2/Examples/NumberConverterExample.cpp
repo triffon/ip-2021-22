@@ -1,3 +1,12 @@
+/*
+    Problem: Write a program that reads a number N from STDIN
+             (N between 0 and 1 000 000) and writes on STDOUT:
+	             - N in binary
+	             - N in octal
+	             - N in decimal
+	             - N in hexademical 
+*/
+
 #include<iostream>
 
 using namespace std;
