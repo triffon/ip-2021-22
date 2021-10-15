@@ -29,8 +29,8 @@
 
 ## Problems for the Pros
 - Implement a programm that is capable of compressing/decompressing text files using [Huffman_Coding](https://en.wikipedia.org/wiki/Huffman_coding). The program is expected to work as follows:
-    - Compression - _**<executable> -c -f <path_to_text_file> -o <path_to_compressed_file>**_
-    - Decompression - _**<executable> -d -f <path_to_compressed_file> -o <path_to_text_file>**_
+    - Compression -_** <executable> -c -f <path_to_text_file> -o <path_to_compressed_file>**_
+    - Decompression -_** <executable> -d -f <path_to_compressed_file> -o <path_to_text_file>**_
 
 ## Solutions
 Upload solutions in your GitHub folder (see: [how-to](https://www.atlassian.com/git/tutorials/saving-changes/git-commit)) (only .CPP files, no executable files)
