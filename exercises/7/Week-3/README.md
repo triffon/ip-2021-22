@@ -32,7 +32,7 @@
 - Write a program that writes on STDOUT the number of unique three-digit numbers that can be created using **_1_**, **_2_**, **_3_** & **_4_** as well as all the numbers.
 
 ## Problems for the Pros
-- Implement a programm that is capable of compressing/decompressing text files using [Huffman_Coding](https://en.wikipedia.org/wiki/Huffman_coding). The program is expected to work as follows (see: [Command Line Arguments in C/C++](https://www.geeksforgeeks.org/command-line-arguments-in-c-cpp/)):
+- Implement a programm that is capable of compressing/decompressing text files using [Huffman Coding](https://en.wikipedia.org/wiki/Huffman_coding). The program is expected to work as follows (see: [Command Line Arguments in C/C++](https://www.geeksforgeeks.org/command-line-arguments-in-c-cpp/)):
     - Compression - _**<path_to_executable> -c -f <path_to_text_file> -o <path_to_compressed_file>**_
     - Decompression - _**<path_to_executable> -d -f <path_to_compressed_file> -o <path_to_text_file>**_
 
