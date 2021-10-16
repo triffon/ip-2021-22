@@ -25,11 +25,11 @@
 - [Name Visbility](https://www.cplusplus.com/doc/tutorial/namespaces/)
 
 ## Problems
-- Write a program that reads a number N from STDIN (N between 1 and 1000000) and writes on STDOUT N with all digits reversed (e.g. 12345 -> 54321).
-- Write a program that reads a number N and a character C from STDIN (N between 1 and 20) and writes on STDOUT an ASCII square with side N filled with C.
-- Write a program that reads numbers N and X from STDIN (N, X between 1 and 20) and writes on STDOUT the sum of the series [x - x^3 + x^5 - ... ± x^N].
-- Write a program that reads a number N from STDIN (N between 1 and 100) and writes on STDOUT all possible ways to express N as a sum of two prime numbers (e.g. 20 -> 3 + 17 & 7 + 13).
-- Write a program that reads a number N and a character C from STDIN (N between 1 and 20) and writes on STDOUT N lines of C repeated N times.
+- Write a program that reads a number N from STDIN (N between 1 and 1000000) and writes on STDOUT N with all digits reversed (e.g. 12345 -> 54321) (see: [example](https://github.com/triffon/ip-2021-22/blob/master/exercises/7/Week-3/Examples/ReverseNumberExample.cpp)).
+- Write a program that reads a number N and a character C from STDIN (N between 1 and 20) and writes on STDOUT an ASCII square with side N filled with C (see: [example](https://github.com/triffon/ip-2021-22/blob/master/exercises/7/Week-3/Examples/ASCIISquareExample.cpp)).
+- Write a program that reads numbers N and X from STDIN (N, X between 1 and 20) and writes on STDOUT the sum of the series [x - x^3 + x^5 - ... ± x^N] (see: [example](https://github.com/triffon/ip-2021-22/blob/master/exercises/7/Week-3/Examples/PolinomExample.cpp)).
+- Write a program that reads a number N from STDIN (N between 1 and 100) and writes on STDOUT all possible ways to express N as a sum of two prime numbers (e.g. 20 -> 3 + 17 & 7 + 13) (see: [example](https://github.com/triffon/ip-2021-22/blob/master/exercises/7/Week-3/Examples/SumOfTwoPrimesExample.cpp)).
+- Write a program that reads a number N and a character C from STDIN (N between 1 and 20) and writes on STDOUT N lines of C repeated N times (see: [example]()).
 
 ## Problems for the Pros
 - Implement a programm that is capable of compressing/decompressing text files using [Huffman Coding](https://en.wikipedia.org/wiki/Huffman_coding). The program is expected to work as follows (see: [Command Line Arguments in C/C++](https://www.geeksforgeeks.org/command-line-arguments-in-c-cpp/)):
