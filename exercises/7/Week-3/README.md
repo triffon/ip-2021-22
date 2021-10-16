@@ -4,10 +4,6 @@
 - [Install C++ Compiler](https://code.visualstudio.com/docs/languages/cpp#_install-a-compiler)
 - [Install VSCode](https://code.visualstudio.com/download)
 - [Install VSCode C++ Extension](https://code.visualstudio.com/docs/languages/cpp#_install-the-extension)
-- [Install Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
-- [Setup GitHub SSH Access](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account)
-- [Clone the Repository](git@github.com:FMI-2021-KN-7/Introduction-to-Programming.git)
-- Create a New Folder in 'Day-3' Named After You
 
 ## Reading Materials
 - [Control Flow](https://en.wikipedia.org/wiki/Control_flow)
