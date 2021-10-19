@@ -18,7 +18,7 @@
 - [Basic I/O](https://www.cplusplus.com/doc/tutorial/basic_io/)
 - [Statements & Flow Control](https://www.cplusplus.com/doc/tutorial/control/)
 - [Functions](https://www.cplusplus.com/doc/tutorial/functions/)
-- [Name Visbility](https://www.cplusplus.com/doc/tutorial/namespaces/)
+- [Name Visibility](https://www.cplusplus.com/doc/tutorial/namespaces/)
 
 ## Problems
 - Write a program that reads a number N from STDIN (N between 1 and 1000000) and writes on STDOUT N with all digits reversed (e.g. 12345 -> 54321) (see: [example](https://github.com/triffon/ip-2021-22/blob/master/exercises/7/Week-3/Examples/ReverseNumberExample.cpp)).
