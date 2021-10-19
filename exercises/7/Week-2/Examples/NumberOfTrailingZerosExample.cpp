@@ -1,3 +1,9 @@
+/*
+    Problem: Write a program that reads a number N from STDIN (N between 0 and
+             1 000 000) and writes on STDOUT the number of trailing zeros at
+             the end of N factorial (e.g. 5! is 120, so it has one trailing zero).
+*/
+
 #include<iostream>
 
 using namespace std;

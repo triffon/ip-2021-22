@@ -1,3 +1,10 @@
+/*
+    Problem: Write a program that reads two numbers N & M from STDIN
+             (N & M between 0 and 1 000 000) and swaps their values:
+	             - with a third variable O
+	             - without a third variable
+*/
+
 #include<iostream>
 
 using namespace std;

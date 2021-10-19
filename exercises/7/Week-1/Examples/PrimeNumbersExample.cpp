@@ -1,3 +1,7 @@
+/*
+    Problem: Write a program that prints all prime numbers between 1 and 1 000 000.
+*/
+
 #include <iostream>
 
 using namespace std;
