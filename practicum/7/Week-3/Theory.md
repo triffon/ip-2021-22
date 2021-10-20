@@ -286,34 +286,22 @@ if(n < 0)
 ```c++
 try{
     int x = 5;
-    throw std::invalid_argument("Oops! Something went wrong.");
+    throw std::exception("Oops! Something went wrong.");
     std::cout << x; //този код няма да се изпълни, защото излизаме от блока
 }
 catch(std::exception e){//и идваме ето тук
     //...
 }
 ```
-- В `catch` можем да решим възникналия проблем. Той приема като аргумент exception, като може да имаме няколко поредни `catch` блока, приемащи различни [типове изключения](https://en.cppreference.com/w/cpp/error/exception) според вида на грешката.
+- В `catch` можем да решим възникналия проблем. Той приема като аргумент exception, като може да имаме няколко поредни `catch` блока.
 ```c++
 try{
     throw std::exception("oops.");
 }
-catch(std::invalid_argument& e){ //няма да влезнем тук
-    std::cout << "invalid argument";
+catch(std::excetption& e){ //ще влезем тук
+    std::cout << "exception 1";
 }
-catch(std::exception& e){//а тук
-    std::cout << "exception";
-}
-```
-**Забележка*: Има йерархия на видовете изключения - ако в по-горен `catch` приемаме като аргумент изключение по-нагоре в йерархията от хвърленото, той пръв ще го хване. 
-```c++
-try{
-    throw std::invalid_argument("oops.");
-}
-catch(std::exception& e){//ще влезнем тук
-    std::cout << "exception";
-}
-catch(std::invalid_argument& e){ //няма да влезнем тук
-    std::cout << "invalid argument";
+catch(std::exception& e){//а тук няма
+    std::cout << "exception 2";
 }
 ```
