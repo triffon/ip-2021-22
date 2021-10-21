@@ -5,51 +5,31 @@
 ## Задача 1
 Да се напше програма, която прочита 2 дробни числа и извежда обиколката и лицето на правоъгълник със страни тези числа.
 
-```c++
-#include <iostream>
-
-using namespace std;
-
-int main() {
-    double a, b;
-    cin >> a >> b;
-
-    double perimeter = 2 * a + 2 * b;
-    double area = a * b;
-
-    cout << "P = " << perimeter << endl;
-    cout << "S = " << area << endl;
-
-    return 0;
-}
-```
+[Решение](https://github.com/triffon/ip-2021-22/blob/master/practicum/3/01%20-%2015.10.2021/task1.cpp)
 
 ## Задача 2
 Да се напише програма, която прочита 5-цифрено число и извежда произведението на цифрите му.
 
+[Решение](https://github.com/triffon/ip-2021-22/blob/master/practicum/3/01%20-%2015.10.2021/task2.cpp)
+
+
 ## Задача 3
 Да се напише програма, която прочита 3 числа и извежда дали има точно едно число, което се среща нечетен брой пъти
 
+[Решение](https://github.com/triffon/ip-2021-22/blob/master/practicum/3/01%20-%2015.10.2021/task3.cpp)
+
+
 ## Задача 4
 Да се напише програма, която прочита един символ и казва дали той е малка латинска буква
-```c++
-#include <iostream>
 
-using namespace std;
+[Решение](https://github.com/triffon/ip-2021-22/blob/master/practicum/3/01%20-%2015.10.2021/task4.cpp)
 
-int main() {
-    char c;
-    cin >> c;
-
-    bool isSmallLetter = (c >= 'a') && (c <= 'z');
-    cout << isSmallLetter << endl;
-
-    return 0;
-}
-```
 
 ## Задача 5
 Да се напише програма, която прочита едно число n и извежда n-тата главна буква от латинската азбука.
+
+[Решение](https://github.com/triffon/ip-2021-22/blob/master/practicum/3/01%20-%2015.10.2021/task5.cpp)
+
 
 ## Задача 6
 Да се напишат булеви изрази, които проверяват дали:
@@ -71,13 +51,25 @@ c >= '0' && c <= '9'
 (x >= -10.1 && x < -3) || (x > 2.5 && x <= 15)
 ```
 5. точка (x, y) е в кръг с радиус r и център (p, q). Hint: питагорова Теорема.
+```c++
+(x - p) * (x - p) + (y - q) * (y - q) <= r * r
+```
 
 6. *два правоъгълника, зададени с координати на горен ляв ъгъл, ширина и височина, имат обща точка
+```c++
+bX <= aX + aWidth && aX <= bX + bWidth && 
+bY <= aY + aHeight && aY <= bY + bHeight
+```
 
 ## Задача 7
 Да се напише програма, кято въвежда координати на точка и извежда дали тази точка се намира в следната фигура:
 
 ![Фигура](https://raw.githubusercontent.com/triffon/ip-2021-22/master/practicum/3/imgs/02_fig.png)
 
+[Решение](https://github.com/triffon/ip-2021-22/blob/master/practicum/3/01%20-%2015.10.2021/task7.cpp)
+
+
 ## Задача 8*
 Да се напише програма, която прочита координатите на 5 точки и извежда лицето на най-малкия правоъгълник, който съдържа всички точки.
+
+[Решение](https://github.com/triffon/ip-2021-22/blob/master/practicum/3/01%20-%2015.10.2021/task8.cpp)
