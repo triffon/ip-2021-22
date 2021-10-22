@@ -290,6 +290,39 @@ bool cmp5{a >= 10}; // cmp5 = true
 // inequality
 bool cmp6{a != 10}; // cmp6 = false 
 ```
+
+### Logical operators
+
+#### Disjunction ( || )
+
+Binary operator that returns true iff either of the operands are true
+
+```c++
+false || false == false;
+false || true  == true;
+true  || false == true;
+true  || true  == true;
+```
+
+#### Conjuction ( && )
+
+```c++
+false && false == false;
+false && true  == false;
+true  && false == false;
+true  && true  == true;
+```
+Binary operator that returns true iff both of the operands are true
+
+#### Negation ( ! )
+
+Unary operator that returns the inverse of the operand
+
+```c++
+!true  == false
+!false == true
+```
+
 ## Input & Output
 
 This is actually a really hard topic that we will gloss over
