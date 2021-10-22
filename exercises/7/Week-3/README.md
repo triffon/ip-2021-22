@@ -19,12 +19,13 @@
 - [Statements & Flow Control](https://www.cplusplus.com/doc/tutorial/control/)
 - [Functions](https://www.cplusplus.com/doc/tutorial/functions/)
 - [Name Visibility](https://www.cplusplus.com/doc/tutorial/namespaces/)
+- [Exceptions](https://www.cplusplus.com/doc/tutorial/exceptions/)
 
 ## Problems
 - Write a program that reads a number N from STDIN (N between 1 and 1000000) and writes on STDOUT N with all digits reversed (e.g. 12345 -> 54321) (see: [example](https://github.com/triffon/ip-2021-22/blob/master/exercises/7/Week-3/Examples/ReverseNumberExample.cpp)).
 - Write a program that reads a number N and a character C from STDIN (N between 1 and 20) and writes on STDOUT N lines of C repeated N times (see: [example](https://github.com/triffon/ip-2021-22/blob/master/exercises/7/Week-3/Examples/ASCIISquareExample.cpp)).
 - Write a program that reads numbers N and X from STDIN (N, X between 1 and 20) and writes on STDOUT the sum of the series [x - x^3 + x^5 - ... ± x^N] (see: [example](https://github.com/triffon/ip-2021-22/blob/master/exercises/7/Week-3/Examples/PolinomExample.cpp)).
-- Write a program that reads a number N from STDIN (N between 1 and 100) and writes on STDOUT all possible ways to express N as a sum of two prime numbers (e.g. 20 -> 3 + 17 & 7 + 13) (see: [example](https://github.com/triffon/ip-2021-22/blob/master/exercises/7/Week-3/Examples/SumOfTwoPrimesExample.cpp)).
+- Write a program that reads a number N from STDIN (N between 1 and 100) and writes on STDOUT all possible ways to express N as a sum of two prime numbers (e.g. 20 -> 1 + 19, 3 + 17 & 7 + 13) (see: [example](https://github.com/triffon/ip-2021-22/blob/master/exercises/7/Week-3/Examples/SumOfTwoPrimesExample.cpp)).
 - Write a program that writes on STDOUT the number of unique three-digit numbers that can be created using **_1_**, **_2_**, **_3_** & **_4_** as well as all the numbers (see: [example](https://github.com/triffon/ip-2021-22/blob/master/exercises/7/Week-3/Examples/AllNumbersExample.cpp)).
 
 ## Problems for the Pros
