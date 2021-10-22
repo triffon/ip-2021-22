@@ -47,4 +47,5 @@ int main() {
     // for (int i = 0; i < n; i++) {
     //    cout << setfill(c) << setw(n) << "" << endl;
     // }
+    return 0;
 }
