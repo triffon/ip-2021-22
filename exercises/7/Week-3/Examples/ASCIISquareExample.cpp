@@ -43,9 +43,18 @@ int main() {
         cout << endl;
     }
 
+    // for (int i = 0; i < n*n; i++) {
+    //     cout << c;
+    //
+    //     if( (i + 1) % n == 0) {
+    //         cout << endl;
+    //     }
+    // }
+
     // A bit of a cheat here... :D
     // for (int i = 0; i < n; i++) {
     //    cout << setfill(c) << setw(n) << "" << endl;
     // }
+
     return 0;
 }
