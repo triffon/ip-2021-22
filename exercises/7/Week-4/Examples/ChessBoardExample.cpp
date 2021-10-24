@@ -8,10 +8,6 @@
 
 using namespace std;
 
-#include<iostream>
-
-using namespace std;
-
 const char A = 'A';
 const char H = 'H';
 
