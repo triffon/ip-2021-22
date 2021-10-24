@@ -28,10 +28,5 @@
 - Write a program that reads a YEAR (YEAR between 1900 and 9999), MONTH (MONTH between 1 and 12) and a DAY (DAY between 1 and 31) from STDIN and writes on STDOUT whether they form a valid date (see: [example](https://github.com/triffon/ip-2021-22/blob/master/exercises/7/Week-4/Examples/DateValidatorExample.cpp)).
 - Write a program that reads a MONTH (MONTH between 1 and 12) from STDIN and writes on STDOUT the season that this month is part of (see: [example](https://github.com/triffon/ip-2021-22/blob/master/exercises/7/Week-4/Examples/SeasonsExample.cpp)).
 
-## Problems for the Pros
-- Implement a programm that is capable of compressing/decompressing text files using [Huffman Coding](https://en.wikipedia.org/wiki/Huffman_coding). The program is expected to work as follows (see: [Command Line Arguments in C/C++](https://www.geeksforgeeks.org/command-line-arguments-in-c-cpp/)):
-    - Compression - _**<path_to_executable> -c -f <path_to_text_file> -o <path_to_compressed_file>**_
-    - Decompression - _**<path_to_executable> -d -f <path_to_compressed_file> -o <path_to_text_file>**_
-
 ## Solutions
 Upload solutions in your GitHub folder (see: [how-to](https://www.atlassian.com/git/tutorials/saving-changes/git-commit)) (only .CPP files, no executable files)
