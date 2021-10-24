@@ -23,4 +23,6 @@ int main() {
     }
 
     cout << "Total: " << counter << endl;
+
+    return 0;
 }
