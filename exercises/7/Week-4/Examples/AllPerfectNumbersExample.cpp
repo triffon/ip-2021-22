@@ -4,7 +4,7 @@
              on STDOUT N with all "perfect" numbers
              between 1 and N incl. A number is considered
              perfect if it is equal to the sum of its
-             divisors (e.g. 6 = 1 + 2 + 3).
+             divisors - e.g. 6 = 1 + 2 + 3.
 */
 
 #include<iostream>
