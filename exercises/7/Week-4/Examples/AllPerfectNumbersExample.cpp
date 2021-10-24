@@ -11,10 +11,6 @@
 
 using namespace std;
 
-#include<iostream>
-
-using namespace std;
-
 const int ONE = 1;
 const int ONE_MILION = 1000000;
 
