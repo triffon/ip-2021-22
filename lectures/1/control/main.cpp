@@ -1,5 +1,6 @@
 #include <iostream>
 #include <cmath>
+#include <cassert>
 using namespace std;
 
 int main1() {
@@ -108,7 +109,9 @@ int main() {
         case '*' : cout << a * b; break;
         case '/' : // !!! cout << (b == 0 ? '!' : a / b); break;
                    // !!! cout << (b == 0 ? "!"" : a / b); break;
-                   if (b == 0) cout << '!'; else cout << a / b; break;
+                   assert(b != 0);
+                   cout << a / b; break;
+                   // if (b == 0) cout << '!'; else cout << a / b; break;
         case '%' : // !!! cout << a % b; break;
                    if (b == 0) cout << '!'; else cout << a % b; break;
         default :  cout << '?';
