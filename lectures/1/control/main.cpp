@@ -29,7 +29,7 @@ int main1() {
     return 0;
 }
 
-int main() {
+int main2() {
     int a, b, c;
     cout << "a = "; cin >> a;
     cout << "b = "; cin >> b;
@@ -74,5 +74,46 @@ int main() {
         // a > b && b < c
             cout << b;
 */
+    return 0;
+}
+
+int main3() {
+    int x;
+    cout << "x = ";cin >> x;
+    switch (x) {
+        case 1 : x++;
+        // !!! case y - 2 : x++;
+        case 2 : x += 2;
+        default : x += 5;
+    }
+    cout << x << endl;
+    return 0;
+}
+
+int main() {
+    int a, b;
+    /* bcout << "a = ";cin >> a;
+    cout << "b = ";cin >> b; */
+    char op;
+    /*
+    cout << "op = "; cin >> op;*/
+    cout << "Въведете израз: ";
+    cin >> a >> op >> b;
+    cout << a << " " << op << " " << b << " = ";
+    switch (op) {
+        // !!! case "+" : cout << a + b; break;
+        case '+' : cout << a + b; break;
+        case '-' : cout << a - b; break;
+        case '.' :
+        case '*' : cout << a * b; break;
+        case '/' : // !!! cout << (b == 0 ? '!' : a / b); break;
+                   // !!! cout << (b == 0 ? "!"" : a / b); break;
+                   if (b == 0) cout << '!'; else cout << a / b; break;
+        case '%' : // !!! cout << a % b; break;
+                   if (b == 0) cout << '!'; else cout << a % b; break;
+        default :  cout << '?';
+    }
+    cout << endl;
+
     return 0;
 }
