@@ -138,13 +138,25 @@ int main() {
    cout << "n = "; cin >> n;
    double x;
    cout << "x = "; cin >> x;
-   long double s = 0;
-   for(int i = 0; i <= n; i++) {
+   long double s = 1, y = 1;
+   // y == a0 == 1
+   // s == a0 == 1
+   for(int i = 1; i <= n; i++) {
+       // s = сумата на всички до a(i-1) включително
+       // y == a(i-1)
+
+       /*
       long f = 1;
       for(int j = 1 ; j <= i ; j++)
         f *= j;
 
-      s += pow(x, i) / f;
+      double y = pow(x, i) / f;
+      */
+      s += y;
+      (y *= x) /= i + 1;
+
+      // s = сумата на всички до ai включително
+      // y = ai
    }
    cout << "exp(x) = " << exp(x) << endl;
    cout << "s      = " << s << endl;
