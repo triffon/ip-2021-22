@@ -1,0 +1,1 @@
+[Алтернативни решения на задачите с обяснения.](https://github.com/RylaD303/UP1/blob/master/%D0%A3%D0%9F_%D0%9F%D1%80%D0%B0%D0%BA%D1%82%D0%B8%D0%BA%D1%83%D0%BC/03-Tasks_solved_20-10-2021/03_tasks_solved_file.cpp)
