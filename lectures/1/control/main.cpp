@@ -46,6 +46,7 @@ int main() {
     cout << (c > b && b > a ? "О" :"НЕ о") << "бразуват растяща редица" << endl;
 
     cout << "Най-малкото число е ";
+    /*
     if (a <= b && a <= c)
         cout << a;
     else if (b <= a && b <= c)
@@ -53,7 +54,25 @@ int main() {
     else
         cout << c;
     cout << endl;
+    */
 
-    
+    cout << (a <= b && a <= c ? a : b <= c && b <= a ? b : c) << endl;
+    // cout << min(a, min(b, c)) << endl;
+
+/*
+    if (a <= b)
+        if (a <= c)
+            cout << a;
+        else
+            // c < a <= b
+            cout << c;
+    else
+        // a > b
+        if (b >= c)
+            cout << c;
+        else
+        // a > b && b < c
+            cout << b;
+*/
     return 0;
 }
