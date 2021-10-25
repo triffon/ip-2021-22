@@ -10,7 +10,7 @@ int main1() {
     x = 5;
     x = 3.8;
     x = true;
-    x = 2 < 3;
+    x = 2 <= 3;
     x = 'A';
     // !!! x = cout;
     // !!! x = (int)cout;
@@ -44,5 +44,16 @@ int main() {
     */
     //c > b && b > a ? cout << "Образуват растяща редица" << endl : cout << "НЕ образуват растяща редица" << endl;
     cout << (c > b && b > a ? "О" :"НЕ о") << "бразуват растяща редица" << endl;
+
+    cout << "Най-малкото число е ";
+    if (a <= b && a <= c)
+        cout << a;
+    else if (b <= a && b <= c)
+        cout << b;
+    else
+        cout << c;
+    cout << endl;
+
+    
     return 0;
 }
