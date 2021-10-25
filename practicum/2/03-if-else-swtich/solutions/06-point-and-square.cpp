@@ -50,8 +50,13 @@ int main()
     //  Ако |Х| == страната, а Y е [-страната; страната]
     //      ИЛИ
     //  Ако |Y| == страната, а X е [-страната; страната]
-    if (    ( (abs(absPtX - halfSide) < EPS) && (absPtY < halfSide + EPS) )
-       ||   ( (abs(absPtY - halfSide) < EPS) && (absPtX < halfSide + EPS) ) )
+
+    bool isXOnLine  = abs(absPtX - halfSide) < EPS; // |X| == halfSide
+    bool isYOnLine  = abs(absPtY - halfSide) < EPS; // |Y| == halfSide
+    bool isXInRange = absPtX < halfSide + EPS;  // X is in [-halfSide; halfSide]
+    bool isYInRange = absPtY < halfSide + EPS;  // Y is in [-halfSide; halfSide]
+
+    if ( (isXOnLine && isYInRange) || (isYOnLine && isXInRange) )
     {
         cout << "is ON the rectangle";
     }
