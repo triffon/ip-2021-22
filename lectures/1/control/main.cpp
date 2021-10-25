@@ -91,7 +91,7 @@ int main3() {
     return 0;
 }
 
-int main() {
+int main4() {
     int a, b;
     /* bcout << "a = ";cin >> a;
     cout << "b = ";cin >> b; */
@@ -119,4 +119,34 @@ int main() {
     cout << endl;
 
     return 0;
+}
+
+int main5() {
+    int n;
+    cout << "n = "; cin >> n;
+    assert(n >= 0);
+    long long f = 1;
+    for(int i = 1 ; /* cout << "i = " << i << endl, */ i <= n ; i++)
+        f *= i;
+    // i > n
+    cout << n << "! = " << f << endl;
+    return 0;
+}
+
+int main() {
+   int n;
+   cout << "n = "; cin >> n;
+   double x;
+   cout << "x = "; cin >> x;
+   long double s = 0;
+   for(int i = 0; i <= n; i++) {
+      long f = 1;
+      for(int j = 1 ; j <= i ; j++)
+        f *= j;
+
+      s += pow(x, i) / f;
+   }
+   cout << "exp(x) = " << exp(x) << endl;
+   cout << "s      = " << s << endl;
+   return 0;
 }
