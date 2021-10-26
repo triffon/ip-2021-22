@@ -51,4 +51,6 @@ int main() {
     int numberOfDigits = getNumberOfDigits(n);
 
     cout << setfill('0') << setw(numberOfDigits) << reversedN << endl;
+
+    return 0;
 }
