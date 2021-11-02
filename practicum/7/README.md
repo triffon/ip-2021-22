@@ -7,3 +7,4 @@
 | :one: | Introduction to course                                      | Present the content of the course. Students introduction. |
 | :two:  | First program. Variables, casting and operations with them. | Presented theory and assignments related with the topic.  |
 | :three:  | Operators. Conditional statements. Bitwise oprerations | Walked through the theory.md and did exercises 10-20.  |
+| :four:  | Loops: For. While. Do-While. | Explained loop syntax and did exercises with single loops.  |
