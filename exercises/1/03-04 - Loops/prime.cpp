@@ -1,6 +1,18 @@
 #include <cmath>
 #include <iostream>
 
+bool is_prime(unsigned number)
+{
+    bool prime{number > 1};
+
+    for (unsigned j{2}; j <= sqrt(number) && prime; ++j)
+    {
+        prime = (number % j != 0);
+    }
+
+    return prime;
+}
+
 int main()
 {
     unsigned n;
@@ -12,15 +24,7 @@ int main()
     {
         std::cin >> number;
 
-        // 0 and 1 are not prime
-        bool is_prime{number > 1};
-
-        for (unsigned j{2}; j <= sqrt(number) && is_prime; ++j)
-        {
-            is_prime = (number % j != 0);
-        }
-
-        counter += is_prime;
+        counter += is_prime(number);
     }
 
     std::cout << counter << '\n';
