@@ -23,10 +23,10 @@
 - [Bubble Sort Algorithm](https://en.wikipedia.org/wiki/Bubble_sort)
 
 ## Problems
-- Write a program that reads a number N from STDIN (N between 1 and 50) and writes on STDOUT the sum of all Fibonacci numbers beteen 0 and N.
-- Write a program that reads a number N from STDIN (N between 5 and 100) and then subsequently reads N numbers from STDIN. At the end of the program write on STDOUT the numbers in sorted order (smallest number first).
-- Write a program that reads a number N from STDIN (N between 5 and 100) and then subsequently reads N numbers from STDIN. At the end of the program write on STDOUT whether the numbers include 5, 10 or 50 by applying [Binary Search](https://en.wikipedia.org/wiki/Binary_search_algorithm).
-- Write a program that reads a number N from STDIN (N between 5 and 100) and then subsequently reads N numbers from STDIN. At the end of the program write on STDOUT the longest subsequence of the original for which it is true that for i < j -> a[i] < a[j].
+- Write a program that reads a number N from STDIN (N between 1 and 50) and writes on STDOUT the sum of all Fibonacci numbers beteen 0 and N (see: [example](https://github.com/triffon/ip-2021-22/blob/master/exercises/7/Week-5/Examples/FibonacciSumExample.cpp)).
+- Write a program that reads a number N from STDIN (N between 5 and 100) and then subsequently reads N numbers from STDIN. At the end of the program write on STDOUT the numbers in sorted (smallest number first) order (see: [example](https://github.com/triffon/ip-2021-22/blob/master/exercises/7/Week-5/Examples/BubbleSortExample.cpp)).
+- Write a program that reads a number N from STDIN (N between 5 and 100) and then subsequently reads N numbers from STDIN. At the end of the program write on STDOUT whether the numbers include 5, 10 or 50 by applying [Binary Search](https://en.wikipedia.org/wiki/Binary_search_algorithm) (see: [example](https://github.com/triffon/ip-2021-22/blob/master/exercises/7/Week-5/Examples/BinarySearchExample.cpp)).
+- Write a program that reads a number N from STDIN (N between 5 and 100) and then subsequently reads N numbers from STDIN. At the end of the program write on STDOUT the longest subsequence of the original for which it is true that for i < j -> a[i] < a[j] (see: [example](https://github.com/triffon/ip-2021-22/blob/master/exercises/7/Week-5/Examples/LongestSubsequenceExample.cpp)).
 
 ## Solutions
 Upload solutions in your GitHub folder (see: [how-to](https://www.atlassian.com/git/tutorials/saving-changes/git-commit)) (only .CPP files, no executable files)
