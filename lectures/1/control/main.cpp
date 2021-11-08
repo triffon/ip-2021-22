@@ -210,7 +210,7 @@ int main9() {
     return 0;
 }
 
-int main() {
+int main10() {
    double x, eps;
    cout << "x = ";   cin >> x;
    cout << "eps = "; cin >> eps;
@@ -229,4 +229,104 @@ int main() {
    cout << "exp(x) = " << exp(x) << endl;
    cout << "s      = " << s << endl;
    return 0;
+}
+
+int main11() {
+    // число е просто <-> точно два делителя (1 и n)
+    int n;
+    cout << "n = "; cin >> n;
+    /*
+    int count = 0;
+    for (int i = 1; i <= n; i++)
+      if (n % i == 0)
+        count++;
+    cout << n;
+    if (count != 2)
+      cout << " НЕ";
+    cout << " е просто\n";
+    */
+    // число НЕ е просто <-> има поне един делител между 2 и n-1 и n != 1
+    bool hasDivisor = false;
+    /*
+    for(int i = 2; i < n; i++)
+        if (n % i == 0) {
+            hasDivisor = true; 
+            break;               // !!!!!
+        }
+    */
+    /*
+    int i = 2;
+    while (i < n && !hasDivisor) {
+        if (n % i == 0)
+            hasDivisor = true;
+        i++;
+    }
+    cout << n;
+    if (hasDivisor)
+      cout << " НЕ";
+    cout << " е просто\n";
+    */
+    int i = 2;
+    // !(n % i == 0 || i == n)  <-->  n % i != 0 && i < n
+    while (i < n && n % i != 0)
+        i++;
+    // намерили сме делител от 2 до n-1 <-> НЕ е просто
+    // n % i == 0
+    // или
+    // сме разгледали всички възможни числа от 2 до n-1 и нито един от тях не е делител <-> е просто или е 1
+    // i == n
+    // n % i == 0 || i == n
+    cout << n;
+//    if (n % i == 0) !!!
+    if (i < n || n <= 1) // това условие не се е нарушило, следователно се е нарушило другото
+      cout << " НЕ";
+    cout << " е просто\n";
+    return 0;
+}
+
+int main12() {
+    int n;
+    cout << "n = "; cin >> n;
+    for(int i = 1; i <= n; i++) {
+        // извеждаме i-ти ред на пирамидата
+        for(int j = 1; j <= i; j++)
+            // извежда j-тото число на i-тия ред на пирамидата
+            cout << j << ' ';
+        cout << endl;
+    }
+    return 0;
+}
+
+int main13() {
+
+    for(int l = 0; l <= 6; l++)
+        // l <= r <= 6
+        for(int r = l; r <= 6; r++)
+            cout << l << '|' << r << endl;
+    return 0;
+}
+
+int main() {
+    unsigned n, origNumber;
+    cout << "n = "; cin >> n;
+    origNumber = n;
+    bool foundRepeating = false;
+    while(n >= 10 && !foundRepeating) {
+        int d = n % 10; // d е последната цифра на n
+        // искаме да сравним d с останалите цифри на n
+        // среща ли се d в останалите цифри на n?
+        int rest = n /= 10;
+        while(rest > 0 && rest % 10 != d)
+            rest /= 10;
+        // добър вариант: ДА: rest % 10 == d
+        // лош вариант:   НЕ: rest == 0 прегледали сме всички цифри в rest и нито една от тях не е d
+        // X || Y  -- излизаме
+        // !(X || Y) -- оставаме -- !X && !Y
+        // foundRepeating = rest % 10 == d; !!!
+        // вместо ДА да напишем !НЕ
+        foundRepeating = rest > 0;
+    }
+    // добър вариант: ДА: foundRepeating
+    // лош вариант:   НЕ: n < 10
+    cout << "В числото " << origNumber << (foundRepeating ? " има" : " няма") << " повтарящи се цифри.\n";
 }
