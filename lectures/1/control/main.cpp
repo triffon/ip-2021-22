@@ -195,7 +195,7 @@ int main8() {
     return 0;
 }
 
-int main() {
+int main9() {
     double x, sum = 0;
     int count = 0;
     while(cin >> x) {
@@ -208,4 +208,25 @@ int main() {
     else
         cout << "Средното аритметично на числата е " << sum / count << endl;
     return 0;
+}
+
+int main() {
+   double x, eps;
+   cout << "x = ";   cin >> x;
+   cout << "eps = "; cin >> eps;
+   long double s = 1, y = 1, i = 1;
+   // y == a0 == 1
+   // s == a0 == 1
+   while(fabs(y) >= eps) {
+      // s == сумата на всички от a0 до a(i-1) включително
+      // y == a(i-1)
+      (y *= x) /= i++;
+      // y == ai
+      s += y;
+      // s == сумата на всички до a0 до ai включително
+   }
+   // |y| < eps
+   cout << "exp(x) = " << exp(x) << endl;
+   cout << "s      = " << s << endl;
+   return 0;
 }
