@@ -133,7 +133,7 @@ int main5() {
     return 0;
 }
 
-int main() {
+int main6() {
    int n;
    cout << "n = "; cin >> n;
    double x;
@@ -160,5 +160,20 @@ int main() {
    }
    cout << "exp(x) = " << exp(x) << endl;
    cout << "s      = " << s << endl;
+   return 0;
+}
+
+int main() {
+   unsigned n; // == unsigned int
+   cout << "n = "; cin >> n;
+   unsigned count = 0;
+   for(int i = 1; i <= n; i++) {
+       int xi = n * n * n + 5 * i * i * n - 8 * i;
+       if (xi % 3 == 0)
+       count++;
+   }
+
+    cout << "Броят на числата е " << count << endl;
+
    return 0;
 }
