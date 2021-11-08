@@ -163,7 +163,7 @@ int main6() {
    return 0;
 }
 
-int main() {
+int main7() {
    unsigned n; // == unsigned int
    cout << "n = "; cin >> n;
    unsigned count = 0;
@@ -176,4 +176,36 @@ int main() {
     cout << "Броят на числата е " << count << endl;
 
    return 0;
+}
+
+int main8() {
+    int n;
+    cout << "n = "; cin >> n;
+    assert(n >= 0);
+    long long f = 1;
+    /*
+    for(int i = 1 ; i <= n ; i++)
+        f *= i;
+    */
+    int i = 1;
+    while (i <= n)
+        f *= i++;
+    // i > n
+    cout << n << "! = " << f << endl;
+    return 0;
+}
+
+int main() {
+    double x, sum = 0;
+    int count = 0;
+    while(cin >> x) {
+        sum += x;
+        count++;
+    }
+    // !cin, т.е. не сме въвели число
+    if (count == 0)
+        cout << "Не са въведени числа!\n";
+    else
+        cout << "Средното аритметично на числата е " << sum / count << endl;
+    return 0;
 }
