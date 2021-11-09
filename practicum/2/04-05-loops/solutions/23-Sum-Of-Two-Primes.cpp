@@ -38,8 +38,8 @@ bool isPrime( unsigned int num )
 {
     if ( num == 2 )
         return true;
-
-    if ( num % 2 == 0 )
+    
+    if ( num < 2 || num % 2 == 0 )
         return false;
 
     unsigned int sqrtNum = round( sqrt( num ) );
