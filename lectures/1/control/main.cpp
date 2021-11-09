@@ -310,12 +310,14 @@ int main() {
     unsigned n, origNumber;
     cout << "n = "; cin >> n;
     origNumber = n;
-    bool foundRepeating = false;
-    while(n >= 10 && !foundRepeating) {
+    // bool foundRepeating = false;
+    // int rest = n; // !!!
+    int rest = 0;
+    while(n >= 10 && rest == 0) {
         int d = n % 10; // d е последната цифра на n
         // искаме да сравним d с останалите цифри на n
         // среща ли се d в останалите цифри на n?
-        int rest = n /= 10;
+        rest = n /= 10;
         while(rest > 0 && rest % 10 != d)
             rest /= 10;
         // добър вариант: ДА: rest % 10 == d
@@ -324,9 +326,9 @@ int main() {
         // !(X || Y) -- оставаме -- !X && !Y
         // foundRepeating = rest % 10 == d; !!!
         // вместо ДА да напишем !НЕ
-        foundRepeating = rest > 0;
+        // foundRepeating = rest > 0;
     }
-    // добър вариант: ДА: foundRepeating
+    // добър вариант: ДА: rest > 0  вместо foundRepeating
     // лош вариант:   НЕ: n < 10
-    cout << "В числото " << origNumber << (foundRepeating ? " има" : " няма") << " повтарящи се цифри.\n";
+    cout << "В числото " << origNumber << (rest > 0 ? " има" : " няма") << " повтарящи се цифри.\n";
 }
