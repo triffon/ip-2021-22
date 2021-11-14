@@ -6,11 +6,13 @@
 - [Install VSCode C++ Extension](https://code.visualstudio.com/docs/languages/cpp#_install-the-extension)
 
 ## Reading Materials
-- [Queue](https://en.wikipedia.org/wiki/Queue_(abstract_data_type))
-- [Stack](https://en.wikipedia.org/wiki/Stack_(abstract_data_type))
-- [Double-ended Queue](https://en.wikipedia.org/wiki/Double-ended_queue)
-- [List](https://en.wikipedia.org/wiki/List_(abstract_data_type))
-- [Set](https://en.wikipedia.org/wiki/Set_(abstract_data_type))
+- [Dynamic Memory](https://www.cplusplus.com/doc/tutorial/dynamic/)
+- [Abstract Data Types](https://en.wikipedia.org/wiki/Abstract_data_type)
+  - [Queue](https://en.wikipedia.org/wiki/Queue_(abstract_data_type))
+  - [Stack](https://en.wikipedia.org/wiki/Stack_(abstract_data_type))
+  - [Double-ended Queue](https://en.wikipedia.org/wiki/Double-ended_queue)
+  - [List](https://en.wikipedia.org/wiki/List_(abstract_data_type))
+  - [Set](https://en.wikipedia.org/wiki/Set_(abstract_data_type))
 
 ## Recap from Lectures
 - [Functions](https://www.cplusplus.com/doc/tutorial/functions/)
