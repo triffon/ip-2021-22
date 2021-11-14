@@ -6,13 +6,11 @@
 - [Install VSCode C++ Extension](https://code.visualstudio.com/docs/languages/cpp#_install-the-extension)
 
 ## Reading Materials
-- [Control Flow](https://en.wikipedia.org/wiki/Control_flow)
-- [Standard Streams](https://en.wikipedia.org/wiki/Standard_streams)
-- [Functions in Programming](https://www.cs.utah.edu/~germain/PPS/Topics/functions.html)
-- [Recursion](https://en.wikipedia.org/wiki/Recursion_(computer_science))
-- [SOLID Principles](https://en.wikipedia.org/wiki/SOLID)
-- [Software Design Patterns](https://en.wikipedia.org/wiki/Software_design_pattern)
-- [Code Reuse](https://en.wikipedia.org/wiki/Code_reuse)
+- [Queue](https://en.wikipedia.org/wiki/Queue_(abstract_data_type))
+- [Stack](https://en.wikipedia.org/wiki/Stack_(abstract_data_type))
+- [Double-ended Queue](https://en.wikipedia.org/wiki/Double-ended_queue)
+- [List](https://en.wikipedia.org/wiki/List_(abstract_data_type))
+- [Set](https://en.wikipedia.org/wiki/Set_(abstract_data_type))
 
 ## Recap from Lectures
 - [Functions](https://www.cplusplus.com/doc/tutorial/functions/)
