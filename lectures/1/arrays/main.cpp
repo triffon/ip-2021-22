@@ -13,7 +13,7 @@ void arrayExamples() {
     cout << a << endl;
 }
 
-int main() {
+void testArrays() {
     const int N = 100;
     int a[N];
     int n;
@@ -105,7 +105,54 @@ int main() {
  
      for(int i = 0; i < n; i++)
         cout << "a[" << i << "] = " << a[i] << endl;
+}
+
+int main() {
+    const int N = 100;
+    int a[N] = { 0 }, b[N] = { 0 };
+    int na, nb;
+    do {
+        cout << "Въведете брой на елементите в първия масив: ";
+        cin >> na;
+    } while (na <= 0 || na > N);
+    for(int i = 0; i < na; i++) {
+        cout << "a[" << i << "] = ";
+        cin >> a[i];
+    }
+    do {
+        cout << "Въведете брой на елементите във втория масив: ";
+        cin >> nb;
+    } while (nb <= 0 || nb > N);
+    for(int i = 0; i < nb; i++) {
+        cout << "b[" << i << "] = ";
+        cin >> b[i];
+    }
+
+    // считаме, че елементите им са подредени в нарастващ ред
+    int c[2*N];
+    int i = 0, j = 0, k = 0;
+    while (i < na && j < nb) // докато и в двата масива има още необработени елементи
+        // инвариант: k е първият незаписан индекс в c и ... ???
+        if (a[i] < b[j])
+            // ще вземем от a
+            c[k++] = a[i++];
+        else
+            // ще вземем от b
+            c[k++] = b[j++];
+    // i == na || j == nb
+    // трябва да прехвърлим останалите елементи
+    if (i == na)
+        // j < nb
+        // a е свършил, трябва да прехвърлим оставащите от b
+        while(j < nb)
+            c[k++] = b[j++];
+    else
+        // b е свършил, трябва да прехвърлим оставащите от a
+        while(i < na)
+            c[k++] = a[i++];
 
 
+    for(int i = 0; i < na + nb; i++)
+        cout << "c[" << i << "] = " << c[i] << endl;
     return 0;
 }
