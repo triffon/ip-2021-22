@@ -2,7 +2,7 @@
 #include <cmath>
 #include <cassert>
 using namespace std;
-
+double square(double);
 int main1() {
     cout << "Hello, world!\n" << "It's me!" << endl;
     2 + 3;
@@ -78,6 +78,9 @@ int main2() {
     return 0;
 }
 
+int meaningOfLife();
+
+double square(double);
 int main3() {
     int x;
     cout << "x = ";cin >> x;
@@ -306,6 +309,15 @@ int main13() {
     return 0;
 }
 
+double square(double);
+
+double dist(double x1, double y1, double x2, double y2) {
+    return sqrt(square(x1 - y1) + square(x2 - y2));
+}
+
+// !!! f() { return 0; }
+int g(double, char, int, float, bool b) { return b; }
+
 int main() {
     unsigned n, origNumber;
     cout << "n = "; cin >> n;
@@ -331,4 +343,8 @@ int main() {
     // добър вариант: ДА: rest > 0  вместо foundRepeating
     // лош вариант:   НЕ: n < 10
     cout << "В числото " << origNumber << (rest > 0 ? " има" : " няма") << " повтарящи се цифри.\n";
+}
+
+double square(double x) {
+    return x * x;
 }
