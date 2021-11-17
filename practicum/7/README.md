@@ -10,4 +10,4 @@
 | :four:  | Loops: for, while, do-while.                                | Explained loop syntax and did exercises with single loops.|
 | :five:  | Nested loops. Arrays. Bubble and selection sort.            | Presented theory and sorting examples. Did exercises for loops & arrays.|
 | :six:   | Harder exercises for arrays.                                | Solved some of the exercises, left the rest for homework. |
-| :seven: | Functions. Passing by reference and by pointer.             |                                                           |
+| :seven: | Functions. Passing by reference and by pointer.             | Dynamic allocation, pointers, refs.  |
