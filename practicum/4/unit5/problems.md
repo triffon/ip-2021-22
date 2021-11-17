@@ -1,70 +1,63 @@
-# Unit 5 - Introduction to Functions /problems/
+# Unit 5 - Въведение във Функциите /Задачаs/
 
-## Problem 1
-Create a program that reads an integer from the console and check whether it is symmetrical.
-Use a function to perform the check
+## Задача 1
+Създайте програма, която чете цяло число от конзолата and check дали е симетрично.
+Използвайте функция, за да направите проверката.
 
-## Problem 2
-Create a function that prints the largest of 3 given integers
+## Задача 2
+Създайте функция, която извежда най-голямото от 3 цели числа.
 
-## Problem 3
-Create a function that calculates the mathematical function
+## Задача 3
+Създайте функция, която пресмята математическата функция:
 ````
 sign(a) = 
     -1, if a < 0
     0 , if a == 0
     1 , if a > 0
 ````
-Using this function, create a program that calculates and prints
+Използвайки тази функция, създайте програма, която пресмята и извежда
 (sign(x)+sign(y))*sign(x+y)
-## Problem 4
-Create a program that reads 2 integers `n ` and `m` from the console and
-calculates and prints `n^m`.
-Use a function you defined to perform the calculation
 
-## Problem 5
-Create a program that prints all primes in the range `[1;n]`,
-where `n` is input from the console. Use 2 functions - one to check whether
-a number is prime, and 1 to perform the printing.
 
-## Problem 6
-Create a program that reads 2 integers - `k` and `l` from the console input
-and prints all integers in the range `[k;l]` that have 2 identical neighbour digits
-in decimal notation. Use 2 functions - one to print the integers in that range and one
-to perform the check whether a number satisfies the forementioned condition
+## Задача 4
+Създайте програма, която чете 2 цели числа `n ` и `m` от конзолата. Програмата да пресмята и извежда `n^m`.
+Създайте функция, която да извършва пресмятането и я използвайте.
+
+## Задача 5
+Създайте програма, която извежда всички прости числа в интервала `[1;n]`, където `n` е число, въведено от конзолата. Използвайте 2 функции - една, която проверява дали дадено цяло число е просто и друга, която да извежда числата.
+
+## Задача 6
+Създайте програма, която чете 2 цели числа - `k` and `l` от конзолатаи извежда всички цели числа в интервала `[k;l]`, които имат 2 равни съседни цифри в десетичен запис. Използвайте 2 функции - една, която извежда числата в интервала и една, която прави проверка дали дадено число удовлетворява даденото ограничение.
 ````
-Example input:
+Примерен вход:
 60 120
 
-Example output:
+Примерен изход:
 66 77 88 99 100 110 111 112 113 114 115 116 117 118 119
 ````
 
-## Problem 7
-Create a program that reads 3 integers - `m`, `n` and `k` from the console input
-and prints all integers in the range `[m;n]` which satisfy the condition that
-the average of their digits is >=`k`
+## Задача 7
+Създайте програма, която чете 3 цели числа - `m`, `n` and `k` от конзолата и извежда всички цели числа в интервала `[m;n]`, които удовлетворяват условието, че средноаритметичното от цифрите им е >=`k`
 ````
-Example input:
+Примерен вход:
 10 50 6
 
-Example output:
+Примерен изход:
 39 48 49
 ````
 
-## Problem 8
-Create a function that calculates the sum of all integers in the range `[a;b]`.
-Use this function to calculate the expression:
+## Задача 8
+Създайте функция, която пресмята сумата на всички цели числа в интервала `[a;b]`.
+Използвайте тази функция, за да пресметнете израза
 ````
 (1 + 2 + 3 + ... + 153) / (m + (m + 1) + ... + n)
 ````
 
-## Problem 9
-Create a function that, by given day, month and year finds the next date.
-Use this function to find the date `n` days after a given date.
+## Задача 9
+Създайте функция, която, по даден ден, месец и година намира следващата дата.
+Използвайте тази функция за да намерите датата след `n` дни.
 
-## Problem 10
-Create a function that, by given the float coordinates of 2 points, checks whether
-they are on a line parallel to the X or Y axis. Using that function,
-create a program that reads the coordinates of pairs of points and prints
-whether they satisfy this condition or not until the numbers `0 0 0 0` are entered.
+## Задача 10
+Създайте функция, която, по дадени реални координати на 2 точки, проверява дали
+са на права, успоредна на абсцисата или ординатата. Използвайки тази функция, създайте програма, която чете координати на двойки точки и извежда дали 
+удовлетворяват това условие или не. Програмата да чете двойки точки, докато числата `0 0 0 0` бъдат въведени.
