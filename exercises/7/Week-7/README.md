@@ -22,7 +22,8 @@
 
 ## Problems
 
-TODO - TBD
+- Write a program that reads a number N from STDIN (N between 2 and 10) and then reads two NxN matrices from STDIN. At the end of the program write on STDOUT the result of [the multiplication of the two matrices](https://en.wikipedia.org/wiki/Matrix_multiplication) (see: [example](https://github.com/triffon/ip-2021-22/blob/master/exercises/7/Week-7/Examples/MatrixMultiplicationExample.cpp)).
+- Write a program that reads a number N from STDIN (N between 5 and 100) and then subsequently reads N numbers from STDIN. At the end of the program write on STDOUT the numbers in sorted order using [merge sort](https://en.wikipedia.org/wiki/Merge_sort) (see: [example](https://github.com/triffon/ip-2021-22/blob/master/exercises/7/Week-7/Examples/MergeSortExample.cpp)).
 
 ## Solutions
 Upload solutions in your GitHub folder (see: [how-to](https://www.atlassian.com/git/tutorials/saving-changes/git-commit)) (only .CPP files, no executable files)
