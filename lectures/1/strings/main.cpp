@@ -79,15 +79,25 @@ void checkPalindrome() {
     cout << "Моля, въведете низ: ";
     cin.getline(s, MAX);
     size_t len = strlen(s);
+    /*
     bool isPalindrome = true;
     for(int i = 0; i < len / 2 && isPalindrome; i++)
+    //  if (s[i] == s[len - 1 - i]) count++;
         if (s[i] != s[len - 1 - i])
-            isPalindrome = true;
+            isPalindrome = false;
+    */
 
+    int i = 0;
+   // докато (не сме стигнали до средата и не сме видяли нарушение на условието за палиндром)
+    while (i < len / 2 && s[i] == s[len - 1 - i])
+        i++;
+    // добър вариант: ДА: i == len / 2
+    // лош вариант:   НЕ: s[i] != s[len - 1 - i]
     cout << "Низът \"" << s << '"';
-    if (!isPalindrome)
-        cout << "НЕ ";
-    cout << "е палиндром." << endl;
+    //if (!isPalindrome)
+    if (i < len / 2) // НЕ <-> !ДА
+        cout << " НЕ";
+    cout << " е палиндром." << endl;
 }
 
 int main(int, char**) {
