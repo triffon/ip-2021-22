@@ -1,5 +1,6 @@
 #include <iostream>
 #include <cstring>
+#include <cassert>
 using namespace std;
 
 void overflowExample() {
@@ -100,8 +101,60 @@ void checkPalindrome() {
     cout << " е палиндром." << endl;
 }
 
+bool isdigit(char c) {
+    return '0' <= c && c <= '9';
+}
+
+bool isop(char c) {
+    return c == '+' || c == '-' || c == '*' || c == '/' || c == '%' || c == '=';
+}
+
+int calculate(int left, char op, int right);
+
+void calculator() {
+    const int MAX = 100;
+    char s[MAX];
+    cout << "Моля, въведете низ: ";
+    cin.getline(s, MAX);
+    int i = 0, screen = 0, // се вижда на екрана на калкулатора
+               memory = 0; // последния запомнен операнд
+    char op = '+'; // все едно добавяме към 0, която е записана в паметта
+    while(s[i] && op != '=') { // != '\0'
+        if (isdigit(s[i]))
+            screen = screen * 10 + (s[i] - '0');
+        if (isop(s[i])) {
+            // сега трябва да изпълним предишната операция
+            // върху това, което е било в паметта (memory)
+            // и това, което сега се вижда на екрана (screen)
+            // и записваме резулата в паметта
+            memory = calculate(memory, op, screen); // при първо изпълнение op == '+', memory == 0,
+                                                    // т.е. screen = screen
+            // след това запомняме новата операция
+            op = s[i];
+            // изчистваме екрана
+            screen = 0;
+        }
+
+        i++;
+    }
+    cout << memory << endl;
+}
+
 int main(int, char**) {
     //overflowExample();
     //stringExamples();
-    checkPalindrome();
+    //checkPalindrome();
+    calculator();
+}
+
+
+int calculate(int left, char op, int right) {
+    switch(op) {
+        case '+' : return left + right;
+        case '-' : return left - right;
+        case '*' : return left * right;
+        case '/' : return right == 0 ? 0 : left / right;
+        case '%' : return right == 0 ? 0 : left % right;
+        default  : assert(isop(op)); return 0;
+    }
 }
