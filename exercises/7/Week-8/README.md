@@ -19,7 +19,7 @@
 
 ## Problems
 
-- Write implementations of the following functions from *_strings.h_* (see: [example](https://github.com/triffon/ip-2021-22/blob/master/exercises/7/Week-8/Examples/StringFunctionsExample.cpp))
+- Write implementations of the following functions from *_strings.h_* (see: [example](https://github.com/triffon/ip-2021-22/blob/master/exercises/7/Week-8/Examples/StingFunctionsExample.cpp))
   - strcpy(s1, s2) - Copies string s2 into string s1.
   - strcat(s1, s2) - Concatenates string s2 onto the end of string s1.
   - strlen(s1) - Returns the length of string s1.
