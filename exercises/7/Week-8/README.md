@@ -19,6 +19,13 @@
 
 ## Problems
 
+- Write implementations of the following functions from *_strings.h_* (see: [example](https://github.com/triffon/ip-2021-22/blob/master/exercises/7/Week-8/Examples/StringFunctionsExample.cpp))
+  - strcpy(s1, s2) - Copies string s2 into string s1.
+  - strcat(s1, s2) - Concatenates string s2 onto the end of string s1.
+  - strlen(s1) - Returns the length of string s1.
+  - strcmp(s1, s2) - Returns 0 if s1 and s2 are the same; less than 0 if s1<s2; greater than 0 if s1>s2.
+  - strchr(s1, ch) - Returns a pointer to the first occurrence of character ch in string s1.
+  - strstr(s1, s2) - Returns a pointer to the first occurrence of string s2 in string s1.
 - Write a program that reads a string S (only lowercase latin characters) from STDIN (0 < streln(S) < 1024). At the end of the program write on STDOUT a (see: [histogram](https://en.wikipedia.org/wiki/Histogram)) of S - the the number of times each lowercase latin character can be found in the string (see: [example](https://github.com/triffon/ip-2021-22/blob/master/exercises/7/Week-8/Examples/HistogramExample.cpp)).
 - Write a program that reads two strings A and B (only numerical characters) from STDIN (0 < strlen(A),strlen(B) < 20) and writes on STDOUT the string that represents the bigger number (see: [example](https://github.com/triffon/ip-2021-22/blob/master/exercises/7/Week-8/Examples/NumberComparisonExample.cpp)).
 
