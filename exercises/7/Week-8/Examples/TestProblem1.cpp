@@ -23,7 +23,7 @@ int readVariable(string variableName, int minValue, int maxValue) {
 }
 
 bool endsWith(int n, int k) {
-    for(; k > 0; k /= 10, n /= 10) {
+    for(; k > 0 && n > 0; k /= 10, n /= 10) {
         if(k % 10 != n % 10) {
             return false;
         }
