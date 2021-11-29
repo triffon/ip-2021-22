@@ -113,10 +113,49 @@ void matrixExamples() {
             cout << a[i][j] << '\t';
         cout << endl;
     }
+}
 
+void matrixWalk() {
+    const int MAX = 100;
+    int a[MAX][MAX];
+    int n;
+    cout << "n = ";cin >> n;
+    
+    int counter = 1;
+    for(int i = 0; i < n; i++) {
+        // за всеки ред i
+        // for(/* надясно до главния диагонал */)
 
+        // I вариант
+        /*
+        for(int k = 0; k < ?; k++)
+            a[?][?] = counter++;  //индексите се изразяват с i и k
+        */
+
+        // II вариант
+        /*
+        for(int k = ?, l = ?; k < ? && l < ?; k??, l??) // k и l се променят
+            a[k][l] = counter++;  // индексите са фиксирани
+        */
+
+        for(int k = 0; k <= i; k++)
+            a[i][k] = counter++;  //индексите се изразяват с i и k
+
+        // for(/* нагоре до първия ред */)
+    
+        for(int k = 0; k < i; k++)
+            a[i-1-k][i] = counter++;  //индексите се изразяват с i и k
+
+    }
+
+    for(int i = 0; i < n; i++) {
+        for(int j = 0; j < n; j++)
+            cout << a[i][j] << '\t';
+        cout << endl;
+    }
 }
 
 int main(int, char**) {
-    matrixExamples();    
+    // matrixExamples();
+    matrixWalk();
 }
