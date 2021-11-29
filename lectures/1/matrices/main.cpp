@@ -1,12 +1,14 @@
 #include <iostream>
 using namespace std;
 
+const int MAX = 100;
+int a[MAX][MAX];
+
 void matrixExamples() {
     int m = 0, n = 0;
     cout << "m = "; cin >> m;
     cout << "n = "; cin >> n;
     // !!! int a[m][n]; // !!!!!
-    const int MAX = 100;
     int a[MAX][MAX] = {0};
 
     for(int i = 0; i < m; i++) // за всеки индекс i на ред
@@ -116,7 +118,6 @@ void matrixExamples() {
 }
 
 void matrixWalk() {
-    const int MAX = 100;
     int a[MAX][MAX];
     int n;
     cout << "n = ";cin >> n;
