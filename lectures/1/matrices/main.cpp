@@ -22,6 +22,47 @@ void matrixExamples() {
         cout << endl;                 // и накрая сложи нов ред
     }
 
+    int columnSums[MAX] = { 0 };
+    for(int j = 0; j < n; j++) // за всяка колона j
+        for(int i = 0; i < m; i++) // за всеки елемент i в колоната j
+            columnSums[j] += a[i][j]; 
+
+
+    for(int j = 0; j < n; j++)
+        cout << "Сумата на колона " << j << " е " << columnSums[j] << endl;
+
+    int x;
+    cout << "x = ";cin >> x;
+
+    for(int i = 0; i < m; i++) {
+        int j = 0;
+        while (j < n && a[i][j] != x)
+            j++;
+        // j == n:         не сме намерили x и сме стиганали до края на реда
+        // или
+        // a[i][j] == x:   намерили сме x
+        if (j < n)
+            cout << x << " се среща на ред " << i << endl;
+    }
+
+    int j = 0, min = a[0][j];
+    while (j < n && min % 2 != 0) {
+        min = a[0][j];
+        for(int i = 1; i < m; i++)
+            if (a[i][j] < min)
+                min = a[i][j];
+        j++;
+    }
+    // j == n, разгледали сме всички колони и нито една няма минимален четен елемент
+    // или
+    // min % 2 == 0, намерили сме колона с минимален четен елемент
+
+    if (j < n)
+        cout << "Има";
+    else
+        cout << "НЯМА";
+    cout << " колона, чийто най-малък елемент е четно число" << endl;
+
     /* Транспонирано извеждане, т.е. по колони вместо по редове */
     /*
     for(int j = 0; j < n; j++) {     // за всяка колона j
@@ -72,8 +113,6 @@ void matrixExamples() {
         cout << endl;
     }
 
-    int columnSums[MAX] = { 0 };
-    
 
 }
 
