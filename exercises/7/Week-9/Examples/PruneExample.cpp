@@ -1,7 +1,7 @@
 /*
     Problem: Write a program that reads a string S from STDIN (0 < streln(S) < 1024).
-             At the end of the program write on STDOUT S with all lowercase letters
-             converted to uppercase & vice versa.
+             At the end of the program write on STDOUT S with all non-alphabetical
+             characters removed.
 */
 
 #include<iostream>
