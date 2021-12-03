@@ -54,7 +54,7 @@ int strcmp(char *first, char *second) {
 }
 
 char* strstr(char *str, char *candidate) {
-    for(int i = 0; i < strlen(str) - strlen(candidate); ++i) {
+    for(int i = 0; i <= strlen(str) - strlen(candidate); ++i) {
         for(int j = 0; j <= strlen(candidate); ++j) {
             if(candidate[j] == '\0') {
                 return str + i;
