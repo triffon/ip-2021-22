@@ -3,7 +3,7 @@ using namespace std;
 
 #include "functions.h"
 
-int main() {
+int triangleArea() {
 
     // въвеждане на координатите
     cout << "Моля, въведете координати на върховете на триъгълника:" << endl;
@@ -23,4 +23,26 @@ int main() {
     printTriangleArea(area);
 
     return 0;
+}
+
+int x = 2;
+
+void f(int& zzz) {
+    static int y = x; // инициализира се при първото извикване на f
+    cout << "f: " << x++ << ' ' << y++ << '\t' << zzz++ << endl;
+}
+
+void g(int z) {
+    f(z);
+    cout << "g: " << x++ << '\t' << z++ << endl;
+    f(z);
+}
+
+void sharingTest() {
+    g(2);
+}
+
+int main() {
+    // triangleArea();
+    sharingTest();
 }

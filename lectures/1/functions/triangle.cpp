@@ -14,6 +14,7 @@ double calculateTriangleArea(double A[], double B[], double C[]) {
 
 // пресмятане на полупериметъра
 double calculateHalfPerimeter(double a, double b, double c) {
+    // !!! a += 5;
     return (a + b + c) / 2;
 }
 
