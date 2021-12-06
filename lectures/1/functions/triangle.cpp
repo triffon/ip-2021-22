@@ -1,4 +1,4 @@
-#include "functions.h"
+#include "functions.hpp"
 #include <cmath>
 
 // пресмятане на лице на триъгълник по три точки

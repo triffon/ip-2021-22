@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-#include "functions.h"
+#include "functions.hpp"
 
 void readPoint(char pointName, double point[]) {
     const int NCOORDS = 2;
