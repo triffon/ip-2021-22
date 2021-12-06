@@ -2,6 +2,7 @@
 using namespace std;
 
 #include "functions.hpp"
+#include "arrayFunctions.hpp"
 
 int triangleArea() {
 
@@ -79,8 +80,28 @@ void swapTest() {
     cout << x << ' ' << y << endl;
 }
 
+void arrayTest() {
+    const int MAX = 100;
+    int array[MAX] = { 0 };
+    int n = readArray(array);
+    printArray(array, n);
+
+    int x;
+    cout << "x = "; cin >> x;
+    cout << "Числото " << x;
+    if (!findInArray(array, n, x))
+        cout << " НЕ";
+    cout << " се среща в масива" << endl;
+
+    int min, max;
+    findMinMaxArray(array, n, min, max);
+    cout << "Най-малкият  елемент на масива е " << min << endl;
+    cout << "Най-големият елемент на масива е " << max << endl;
+}
+
 int main() {
     // triangleArea();
     // sharingTest();
-    swapTest();
+    // swapTest();
+    arrayTest();
 }
