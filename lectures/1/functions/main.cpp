@@ -80,7 +80,7 @@ void swapTest() {
 }
 
 int main() {
-    triangleArea();
+    // triangleArea();
     // sharingTest();
-    // swapTest();
+    swapTest();
 }
