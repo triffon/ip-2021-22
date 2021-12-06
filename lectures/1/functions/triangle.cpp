@@ -2,7 +2,7 @@
 #include <cmath>
 
 // пресмятане на лице на триъгълник по три точки
-double calculateTriangleArea(double A[], double B[], double C[]) {
+double calculateTriangleArea(double A[1], double B[1], double C[1]) {
     // пресмятане на страните
     double a = calculateDistance(B, C);
     double b = calculateDistance(A, C);
