@@ -16,6 +16,7 @@
 
 ## Recap from Lectures
 - [C-Strings](https://www.tutorialspoint.com/cprogramming/c_strings.htm)
+- [Multi-Dimensional Arrays](https://www.cplusplus.com/doc/tutorial/arrays/#multidimensional)
 
 ## Problems
 
