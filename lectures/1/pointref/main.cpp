@@ -131,11 +131,83 @@ void testPointersAndStrings() {
         // p е len+1 стъпки от началото на s
         len++;
     cout << len << endl;
+
+    // !!! p = "Hello, world!";
+}
+
+void testPointersConsts() {
+    int x = 10;
+    int const MAX = x;
+    // !!! int * const p;
+    // !!! p = &x;
+    int * const p = &x;
+    int * const q = p;
+    cout << *p << endl;
+    *p = 20;
+    // !!! p = q;
+    cout << *p << endl;
+
+    int const * r;
+    r = p;
+    cout << *r << endl;
+    int y = 15;
+    r = &y;
+    cout << *r << endl;
+    // !!! *r = 30;
+
+    // !!! int *s = r; *s = 30;
+
+    /*
+    int *s = (int*)r;
+    *s = 30;
+    cout << y << endl;
+    */
+
+   // !!! int* pMAX = &MAX;
+   int const *pMAX = &MAX;
+   cout << *pMAX << endl;
+}
+
+void testVoidPointers() {
+    int x = 2;
+    double y = 1.23;
+    char c;
+    cout << "коя променлива да избера?";
+    cin >> c;
+    int *p = &x;
+    double *q = &y;
+    void* r;
+    if (c == 'x') {
+    // !!! q = &x;
+       p = &x; 
+       r = &x;
+    }
+    if (c == 'y') {
+    // !!! p = &y;
+       q = &y;
+       r = &y;
+    }
+    /*
+    if (c == 'x')
+        cout << p << endl;
+    if (c == 'y')
+        cout << q << endl;
+    */
+    cout << r << endl;
+    r = p;
+    r = q;
+    r = &r;
+    // !!! p = r;
+    // !!! q = r;
+    cout << r << ' ' << &r << endl;
+    // !!! cout << *r << endl;
 }
 
 int main() {
     // testUndefinedPointer();
     // testPointers();
     // testPointersAndArrays();
-    testPointersAndStrings();
+    // testPointersAndStrings();
+    // testPointersConsts();
+    testVoidPointers();
 }
