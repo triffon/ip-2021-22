@@ -12,3 +12,4 @@
 | :six:   | Harder exercises for arrays.                                | Solved some of the exercises, left the rest for homework. |
 | :seven: | Functions. Passing by reference and by pointer.             | Dynamic allocation, pointers, refs.  |
 | :eight: | Solved the tasks from the exam.                | Solved the tasks from the exam.   |
+| :nine: | Tasks about functions and functions params passing                | Talked a little about C-Strings etc.   |
