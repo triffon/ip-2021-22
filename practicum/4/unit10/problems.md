@@ -21,9 +21,9 @@
 ## Зад. 6
 Да се имплементира рекурсивна функция `gcd(int a, int b)`, която пресмята най-големия общ делител на `a` и `b`.
 <i><br>Подсказка: Използвайте следната дефиниця за НОД:<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;| a, ако a=b<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;| a, ако a=b<br>
 	gcd(a,b) = | gcd(a-b, b), ако a > b<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;| gcd(a, b-a), ако a &lt; b
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;| gcd(a, b-a), ако a &lt; b
 </i>
 ## Зад. 7
 Да се имплементира рекурсивна функция `bool contains(int arr[], int size, int startIdx, int x)`, която проверява дали `arr` съдържа `x` от `startIdx` до края си.
