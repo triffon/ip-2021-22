@@ -14,4 +14,4 @@
 | :eight: | Solved the tasks from the exam.                | Solved the tasks from the exam.   |
 | :nine: | Tasks about functions and functions params passing                | Talked a little about C-Strings etc.   |
 | 1️⃣0️⃣ | 8th December                | |
-| 1️⃣1️⃣ | Multi-dimensional arrays. Dynamically allocated memory.| |
+| 1️⃣1️⃣ | Multi-dimensional arrays. Dynamically allocated memory.| Expalin Theory and solve some tasks |
