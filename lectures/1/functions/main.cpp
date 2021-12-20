@@ -3,6 +3,7 @@ using namespace std;
 
 #include "functions.hpp"
 #include "arrayFunctions.hpp"
+#include "matrixFunctions.hpp"
 
 int triangleArea() {
 
@@ -99,9 +100,15 @@ void arrayTest() {
     cout << "Най-големият елемент на масива е " << max << endl;
 }
 
+void matrixTest() {
+    int a[][MAX_COLUMNS] = { {1, 2, 3}, {4, 5, 6} };
+    printMatrix(a, 2, 3);
+}
+
 int main() {
     // triangleArea();
     // sharingTest();
     // swapTest();
-    arrayTest();
+    // arrayTest();
+    matrixTest();
 }
