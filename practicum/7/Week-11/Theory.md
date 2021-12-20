@@ -210,6 +210,8 @@ int* getEvenElements(int* arr, int size){
             evens[j] = arr[i];
             j++;
         }
+	
+    return evens;
 }
 
 int main(){
