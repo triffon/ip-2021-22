@@ -1,4 +1,5 @@
 #include <iostream>
+#include <cstring>
 using namespace std;
 
 #include "matrixFunctions.hpp"
@@ -22,4 +23,12 @@ unsigned readStringArray(char (*arr)[MAX_LENGTH]) {
     while(arr[count++][0]);
     // не трябва да броим последния въведен низ, понеже е празен
     return count - 1;
+}
+
+// среща ли се низът s в масива от n низа arr 
+bool stringInArray(char (*arr)[MAX_LENGTH], unsigned n, char const* s) {
+    int i = 0;
+    while (i < n && strcmp(s, arr[i]))
+        i++;
+    return i < n;
 }

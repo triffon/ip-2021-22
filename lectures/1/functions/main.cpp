@@ -109,6 +109,14 @@ void matrixTest() {
     unsigned n = readStringArray(stringArray);
     for(int i = 0; i < n; i++)
         cout << stringArray[i] << endl;
+
+    char s[MAX_LENGTH];
+    cout << "Моля, въведете дума за търсене: ";
+    cin.getline(s, MAX_LENGTH);
+    cout << "Думата " << s;
+    if (!stringInArray(stringArray, n, s))
+        cout << " НЕ";
+    cout << " се среща в масива от низове." << endl;
 }
 
 int main() {
