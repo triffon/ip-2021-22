@@ -4,6 +4,7 @@ using namespace std;
 #include "functions.hpp"
 #include "arrayFunctions.hpp"
 #include "matrixFunctions.hpp"
+#include "pointrefFunctions.hpp"
 
 int triangleArea() {
 
@@ -85,7 +86,7 @@ void arrayTest() {
     const int MAX = 100;
     int array[MAX] = { 0 };
     int n = readArray(array);
-    printArray(array, n);
+    cout << printArray(array, n)[3] << endl;
 
     int x;
     cout << "x = "; cin >> x;
@@ -119,10 +120,28 @@ void matrixTest() {
     cout << " се среща в масива от низове." << endl;
 }
 
+void badPointerTest() {
+    int x = 3;
+    int* p = pointerFunction(&x);
+    cout << *p << endl;
+}
+
+void badRefTest() {
+    int x = 3;
+    int& z = refFunction(&x, x);
+    cout << z << endl;
+    z = 10;
+    cout << x << endl;
+    refFunction(&x, x)++;
+    cout << x << endl;
+}
+
 int main() {
     // triangleArea();
     // sharingTest();
     // swapTest();
     // arrayTest();
-    matrixTest();
+    // matrixTest();
+    // badPointerTest();
+    badRefTest();
 }
