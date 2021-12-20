@@ -19,6 +19,26 @@ int* readArray(unsigned n) {
     return a;
 }
 
+int** readDynamicMatrix(unsigned m, unsigned n) {
+    int** matrix = new int*[m];
+    for(int i = 0; i < m; i++) {
+        matrix[i] = new int[n];
+        for(int j = 0; j < n; j++) {
+            cout << "a[" << i << "][" << j << "] = ";
+            cin >> matrix[i][j]; // <-> *(*(matrix + i) + j)
+        }
+    }
+    return matrix;
+}
+
+void printDynamicMatrix(int **a, unsigned m, unsigned n) {
+    for(int i = 0; i < m; i++) {
+        for(int j = 0; j < n; j++)
+            cout << a[i][j] << '\t';
+        cout << endl;
+    }
+}
+
 double findAverage(int a[], unsigned n) {
     double sum = 0;
     for(int i = 0; i < n; i++)
@@ -33,7 +53,13 @@ void calculateAverage() {
     delete[] array;
 }
 
+void testMatrix() {
+    int** matrix = readDynamicMatrix(2, 3);
+    printDynamicMatrix(matrix, 2, 3);
+}
+
 int main(int, char**) {
     //for(int i = 0; i < 100000; i++)
-        calculateAverage();
+        //calculateAverage();
+    testMatrix();
 }
