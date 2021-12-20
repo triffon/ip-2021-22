@@ -87,7 +87,9 @@ void removeElements(int* arr, int& length) {
 		if (arr[i] < arr[i - 1] && arr[i] < arr[i + 1]) {
 			deleteElementAtIndex(arr, i, length);
 			i--;
-			i += (i == 0);
+			if(i == 0) { //We don't want to deal with i == 0 case. Its always true in our solution.
+				i = 1;
+			}
 		}
 		else {
 			++i;
