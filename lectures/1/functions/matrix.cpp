@@ -31,4 +31,11 @@ bool stringInArray(char (*arr)[MAX_LENGTH], unsigned n, char const* s) {
     while (i < n && strcmp(s, arr[i]))
         i++;
     return i < n;
+
+/*
+    for(int i = 0; i < n; i++)
+        if (!strcmp(arr[i], s))
+            return true;
+    return false;
+*/
 }
