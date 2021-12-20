@@ -103,6 +103,12 @@ void arrayTest() {
 void matrixTest() {
     int a[][MAX_COLUMNS] = { {1, 2, 3}, {4, 5, 6} };
     printMatrix(a, 2, 3);
+
+    const int MAX_STRINGS = 10;
+    char stringArray[MAX_STRINGS][MAX_LENGTH];
+    unsigned n = readStringArray(stringArray);
+    for(int i = 0; i < n; i++)
+        cout << stringArray[i] << endl;
 }
 
 int main() {

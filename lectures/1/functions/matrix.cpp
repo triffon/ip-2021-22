@@ -11,3 +11,15 @@ void printMatrix(int a[][MAX_COLUMNS], int m, int n) {
         cout << endl;
     }
 }
+
+// въвежда от клавиатурата масив от низове и връща въведения брой низове
+unsigned readStringArray(char (*arr)[MAX_LENGTH]) {
+    unsigned count = 0;
+    do
+        // прочитаме низа arr[count]
+        // cin >> arr[count]; // !!!!
+        cin.getline(arr[count], MAX_LENGTH);
+    while(arr[count++][0]);
+    // не трябва да броим последния въведен низ, понеже е празен
+    return count - 1;
+}
