@@ -203,11 +203,34 @@ void testVoidPointers() {
     // !!! cout << *r << endl;
 }
 
+void testReferences() {
+    int x = 3, *p = &x, &q = x, a[] = { 1, 2, 3 };
+    q += 5;
+    cout << x << endl;
+    *p += 13;
+    cout << q << endl;
+    p = a + 1;
+    cout << *p << endl; // <-> *(a+1) <-> a[1]
+    int &r = p[1]; // <-> a[2]
+    r += 5;
+    cout << a[2] << endl; // <-> *(p+1) <-> *(a+2)
+    // !!! int &s;
+    const int& s = a[1];
+    // !!! s++;
+    int y = s;
+    cout << y << ' ' << a[1] << ' ' << s << endl;
+    // !!! int& z = s;
+    int& z = (int&)s; // !!!
+    z++;
+    cout << y << ' ' << a[1] << ' ' << s << endl;
+}
+
 int main() {
     // testUndefinedPointer();
     // testPointers();
     // testPointersAndArrays();
     // testPointersAndStrings();
     // testPointersConsts();
-    testVoidPointers();
+    // testVoidPointers();
+    testReferences();
 }

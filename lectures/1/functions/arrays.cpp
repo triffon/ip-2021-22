@@ -16,10 +16,11 @@ int readArray(int a[]) {
 }
 
 // извеждане на масив a от n цели числа
-void printArray(int* a, int n) {
+int* printArray(int* a, int n) {
     for(int i = 0; i < n; i++)
         cout << a[i] << ' ';
     cout << endl;
+    return a;
 }
 
 // търси дали елементът x се среща в масива a с дължина n

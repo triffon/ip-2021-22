@@ -3,7 +3,7 @@
 int readArray(int a[]);
 
 // извеждане на масив a от n цели числа
-void printArray(int* a, int n);
+int* printArray(int* a, int n);
 
 // търси дали елементът x се среща в масива a с дължина n
 bool findInArray(int a[], int n, int x);

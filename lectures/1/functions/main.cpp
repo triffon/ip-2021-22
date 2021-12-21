@@ -3,6 +3,8 @@ using namespace std;
 
 #include "functions.hpp"
 #include "arrayFunctions.hpp"
+#include "matrixFunctions.hpp"
+#include "pointrefFunctions.hpp"
 
 int triangleArea() {
 
@@ -84,7 +86,7 @@ void arrayTest() {
     const int MAX = 100;
     int array[MAX] = { 0 };
     int n = readArray(array);
-    printArray(array, n);
+    cout << printArray(array, n)[3] << endl;
 
     int x;
     cout << "x = "; cin >> x;
@@ -99,9 +101,47 @@ void arrayTest() {
     cout << "Най-големият елемент на масива е " << max << endl;
 }
 
+void matrixTest() {
+    int a[][MAX_COLUMNS] = { {1, 2, 3}, {4, 5, 6} };
+    printMatrix(a, 2, 3);
+
+    const int MAX_STRINGS = 10;
+    char stringArray[MAX_STRINGS][MAX_LENGTH];
+    unsigned n = readStringArray(stringArray);
+    for(int i = 0; i < n; i++)
+        cout << stringArray[i] << endl;
+
+    char s[MAX_LENGTH];
+    cout << "Моля, въведете дума за търсене: ";
+    cin.getline(s, MAX_LENGTH);
+    cout << "Думата " << s;
+    if (!stringInArray(stringArray, n, s))
+        cout << " НЕ";
+    cout << " се среща в масива от низове." << endl;
+}
+
+void badPointerTest() {
+    int x = 3;
+    int* p = pointerFunction(&x);
+    cout << *p << endl;
+}
+
+void badRefTest() {
+    int x = 3;
+    int& z = refFunction(&x, x);
+    cout << z << endl;
+    z = 10;
+    cout << x << endl;
+    refFunction(&x, x)++;
+    cout << x << endl;
+}
+
 int main() {
     // triangleArea();
     // sharingTest();
     // swapTest();
-    arrayTest();
+    // arrayTest();
+    // matrixTest();
+    // badPointerTest();
+    badRefTest();
 }
