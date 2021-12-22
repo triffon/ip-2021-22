@@ -28,14 +28,14 @@ int factorial(int n) {
 }
 
 void print(int n) {
-    std::cout << n << ' ';
-
-    print(n - 1);
-
     if(n == 0){
         std::cout << std::endl;
         return;
     }
+    
+    std::cout << n << ' ';
+
+    print(n - 1);
 } 
 ```
 Ако няма дъно, функцията изпада в *безкрайна рекурсия*
