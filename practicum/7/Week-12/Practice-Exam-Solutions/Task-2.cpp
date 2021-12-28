@@ -30,20 +30,23 @@ void extractCapitalLetters(char* str, int n, char* result) {
 	result[index] = '\0';
 }
 
-bool checkEquality(char* str, int n) {
-	char* smalls = new char[strlen(str) + 1];
-	extractSmallLetters(str, n, smalls);
+bool checkEquality(char* str, int strSize) {
+	char* smalls = new char[strSize + 1];
+	extractSmallLetters(str, strSize, smalls);
 
-	char* capitals = new char[strlen(str) + 1];
-	extractCapitalLetters(str, n, capitals);
+	char* capitals = new char[strSize + 1];
+	extractCapitalLetters(str, strSize, capitals);
 
-	if (strlen(smalls) != strlen(capitals)) {
+	int smallsSize = strlen(smalls);
+	int capitalsSize = strlen(capitals);
+
+	if (smallsSize != capitalsSize) {
 		delete[] smalls;
 		delete[] capitals;
 		return false;
 	}
 
-	for (int i = 0; i < strlen(smalls); i++) {
+	for (int i = 0; i < smallsSize; i++) {
 		if (smalls[i] - 32 != capitals[i]) {
 			delete[] smalls;
 			delete[] capitals;
