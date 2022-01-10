@@ -114,7 +114,6 @@ double calculateExpression(char const*& expr) {
     return calculate(left, op, right);
 }
 
-
 void testExpression() {
     const int MAX = 1000;
     char expr[MAX] = "";
@@ -124,8 +123,45 @@ void testExpression() {
     assert(*p == '\0');
 }
 
+int readArray(int a[]) {
+  int n;
+  cout << "n = ";cin >> n;
+  for(int i = 0; i < n; i++) {
+    cout << "a[" << i << "] = ";
+    cin >> a[i];
+  }
+  return n;
+}
+
+int sum(int a[], int n) {
+    if (n == 0)
+        return 0;
+    // return a[n - 1] + sum(a, n - 1);
+    return a[0] + sum(a + 1, n - 1);
+}
+
+bool exists(int x, int a[], int n) {
+    /*
+    if (n == 0)
+        return false;
+    if (a[n - 1] == x)
+        return true;
+    // n > 0 && a[n - 1] != x
+    return exists(x, a, n - 1);
+    */
+    return n > 0 && (a[n - 1] != x || exists(x, a, n - 1));
+}
+
+void testArrays() {
+    const int MAX = 100;
+    int a[MAX] = {0};
+    int n = readArray(a);
+    cout << "Сумата на елементите е: " << sum(a, n) << endl;
+}
+
 int main() {
     // testRecursion();
-    testExpression();
+    // testExpression();
+    testArrays();
     return 0;
 }
