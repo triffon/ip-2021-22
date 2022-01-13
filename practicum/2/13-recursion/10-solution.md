@@ -1,0 +1,1 @@
+Решението на задача 10 можете да намерите [тук](https://github.com/triffon/ip-2021-22/tree/master/practicum/2/13-recursion/10-solution.md).
