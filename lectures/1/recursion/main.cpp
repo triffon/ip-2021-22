@@ -133,6 +133,14 @@ unsigned readArray(int a[]) {
   return n;
 }
 
+// извеждане на масив a от n цели числа
+int* printArray(int* a, int n) {
+    for(int i = 0; i < n; i++)
+        cout << a[i] << ' ';
+    cout << endl;
+    return a;
+}
+
 int sum(int a[], unsigned n) {
     if (n == 0)
         return 0;
@@ -164,6 +172,69 @@ bool isSorted(int a[], unsigned n) {
     return a[n - 2] <= a[n - 1] && isSorted(a, n - 1);
 }
 
+bool areDifferent(int a[], unsigned n) {
+    return n <= 1 || !exists(a[n - 1], a, n - 1) && areDifferent(a, n - 1);
+    //if (n == 0)
+    if (n <= 1)
+        return true;
+    // !!! return a[n - 2] != a[n - 1] && areDifferent(a, n - 1);
+    /*
+    if (n == 2 && a[0] == a[1])
+        return false;
+    */ 
+    if (exists(a[n - 1], a, n - 1))
+        return false;
+    // n > 1 && !exists(a[n-1], a, n - 1)
+    return areDifferent(a, n - 1);
+}
+
+/*
+    Функцията разделя масива на две части
+    В лявата част са елементи < pivot
+    Във дясната част са елементи >= pivot
+    Връща индекса на последния елемент в лявата част
+*/
+int split(int a[], unsigned n, int pivot) {
+    int i = 0, j = n - 1;
+    while (i != j)
+        if (a[i] < pivot)
+            // a[i] вече е в лявата част на масива, където трябва да бъде
+            i++;
+        else
+            // a[i] трябва да се премести в дясната част!
+            if (a[j] >= pivot)
+                // a[j] вече е в дясната част на масива, където трябва да бъде
+                j--;
+            else
+                // a[j] трябва да се премести в лявата част!
+                // разменяме ги!
+                swap(a[i], a[j]);
+    // i == j
+    // какво знаем за a[i]?
+    // нищо, трябва да проверим в коя част на масива трябва да бъде
+    if (a[i] < pivot)
+        // a[i] трябва да се причисли към лявата част на масива
+        // т.е. i е индексът на последния елемент в лявата част на масива
+        return i;
+    // a[i] трябва да се причисли към дясната част на масива
+    // възможно е да се получи -1, ако лявата част се окаже празна
+    return i - 1;
+}
+
+void quicksort(int a[], unsigned n) {
+    if (n > 1) {
+        int pivot = a[0];
+        int pivotIndex = split(a + 1, n - 1, pivot) + 1;
+        // +1 защото искаме да броим от началото на нашия, оригинален масив
+        swap(a[0], a[pivotIndex]);
+        // a[0] вече е на окончателната си позиция
+        // рекурсивно сортираме лявата част
+        quicksort(a, pivotIndex);
+        // рекурсивно сортираме дясната част (пропускаме оста!)
+        quicksort(a + pivotIndex + 1, n - 1 - pivotIndex);
+    }
+}
+
 void testArrays() {
     const int MAX = 100;
     int a[MAX] = {0};
@@ -179,7 +250,14 @@ void testArrays() {
     if (!isSorted(a, n))
         cout << " НЕ";
     cout << " е сортиран." << endl;
+    cout << "Масивът";
+    if (!areDifferent(a, n))
+        cout << " НЕ";
+    cout << " се състои от различни елементи." << endl;
+    quicksort(a, n);
+    printArray(a, n);
 }
+
 
 int main() {
     // testRecursion();
