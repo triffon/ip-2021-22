@@ -123,8 +123,8 @@ void testExpression() {
     assert(*p == '\0');
 }
 
-int readArray(int a[]) {
-  int n;
+unsigned readArray(int a[]) {
+  unsigned n;
   cout << "n = ";cin >> n;
   for(int i = 0; i < n; i++) {
     cout << "a[" << i << "] = ";
@@ -133,14 +133,14 @@ int readArray(int a[]) {
   return n;
 }
 
-int sum(int a[], int n) {
+int sum(int a[], unsigned n) {
     if (n == 0)
         return 0;
     // return a[n - 1] + sum(a, n - 1);
     return a[0] + sum(a + 1, n - 1);
 }
 
-bool exists(int x, int a[], int n) {
+bool exists(int x, int a[], unsigned n) {
     /*
     if (n == 0)
         return false;
@@ -149,14 +149,36 @@ bool exists(int x, int a[], int n) {
     // n > 0 && a[n - 1] != x
     return exists(x, a, n - 1);
     */
-    return n > 0 && (a[n - 1] != x || exists(x, a, n - 1));
+    // if (X) return false; Y    <-> return !X && Y
+    // if (U) return true; V     <-> return U || V
+    return n > 0 && (a[n - 1] == x || exists(x, a, n - 1));
+}
+
+bool isSorted(int a[], unsigned n) {
+    return n <= 1 || a[n - 2] <= a[n - 1] && isSorted(a, n - 1);
+
+    if (n <= 1)
+        return true;
+    // !!! n > 0, n >= 1
+    // n > 1, n >= 2
+    return a[n - 2] <= a[n - 1] && isSorted(a, n - 1);
 }
 
 void testArrays() {
     const int MAX = 100;
     int a[MAX] = {0};
-    int n = readArray(a);
+    unsigned n = readArray(a);
     cout << "Сумата на елементите е: " << sum(a, n) << endl;
+    int x;
+    cout << "x = "; cin >> x;
+    cout << "Елементът " << x;
+    if (!exists(x, a, n))
+        cout << " НЕ";
+    cout << " се среща в масива." << endl;
+    cout << "Масивът";
+    if (!isSorted(a, n))
+        cout << " НЕ";
+    cout << " е сортиран." << endl;
 }
 
 int main() {
