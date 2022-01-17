@@ -4,7 +4,7 @@ using namespace std;
 const unsigned MAX = 10;
 
 
-bool findTreasure(char labyrinth[][MAX], unsigned n, int x, int y, int& tx, int& ty) {
+bool findTreasure(char labyrinth[][MAX], unsigned n, int x, int y, int& tx, int& ty, int& steps) {
     cout << "Пробваме да стъпим на (" << x << ',' << y << ")" << endl;
     // ако съм излязъл извън границите
     // или
@@ -25,20 +25,22 @@ bool findTreasure(char labyrinth[][MAX], unsigned n, int x, int y, int& tx, int&
     }
     // маркирам, че съм стъпил на [x][y]
     labyrinth[x][y] = '.';
+    steps++;
     // стъпка на север
-    if (findTreasure(labyrinth, n, x - 1, y   , tx, ty))
+    if (findTreasure(labyrinth, n, x - 1, y   , tx, ty, steps))
         return true;
     // стъпка на юг
-    if (findTreasure(labyrinth, n, x + 1, y   , tx, ty))
+    if (findTreasure(labyrinth, n, x + 1, y   , tx, ty, steps))
         return true;
     // стъпка на изток
-    if (findTreasure(labyrinth, n, x    , y + 1, tx, ty))
+    if (findTreasure(labyrinth, n, x    , y + 1, tx, ty, steps))
         return true;
     // стъпка на запад
-    if (findTreasure(labyrinth, n, x    , y - 1, tx, ty))
+    if (findTreasure(labyrinth, n, x    , y - 1, tx, ty, steps))
         return true;
     // връщане назад
     cout << "Връщаме се назад от (" << x << ',' << y << ")" << endl;
+    steps--;
     return false;
 }
 
@@ -52,9 +54,9 @@ void testLabyrinth() {
             "  ** "
         };
     int startx = 4, starty = 1;
-    int tx = -1, ty = -1;
-    if (findTreasure(labyrinth, 5, startx, starty, tx, ty))
-        cout << "Намерихме съкровището на позиция (" << tx << ',' << ty << ")!" << endl;
+    int tx = -1, ty = -1, steps = 0;
+    if (findTreasure(labyrinth, 5, startx, starty, tx, ty, steps))
+        cout << "Намерихме съкровището на позиция (" << tx << ',' << ty << ") за " << steps << " стъпки!" << endl;
     else
         cout << "Не успяхме да намерим съкровището..." << endl;
 }
